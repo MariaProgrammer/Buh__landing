@@ -1,0 +1,369 @@
+.header
+
+  width: 100%
+  height: 99.3rem
+  background: url('../img/header__pic.svg'), url('../img/header__bg.svg')
+  background-position: 115% 60%, center
+  background-size: 60% auto, cover
+  background-repeat: no-repeat
+  padding-top: 3.8rem
+
+  &__nav
+    @include flex-center
+    height: 8.7rem
+    justify-content: space-between
+    margin-bottom: 11.8rem
+  &__left
+    max-width: 55%
+    &-wrap
+      margin-bottom: 4.3rem
+    &-title
+      margin: 0
+      padding: 0
+      margin-bottom: 4.3rem
+    &-descr
+      margin-bottom: .3rem
+      &:last-of-type
+        margin-bottom: 0
+    &-btn
+      width: 48.8rem
+      height: 5.3rem
+      margin-bottom: 4.3rem
+
+.nav__logo
+  width: 23%
+
+.about
+  &__features
+    padding-top: 20.4rem
+    //padding-bottom: 18.5rem
+    min-height: 140rem
+    background: url("../img/about__pic1-lg1.svg"), url('../img/wave3.svg')
+    background-position: 0 0, 0 60rem
+    background-size: contain, contain
+    background-repeat: no-repeat
+    
+
+  &__features-top
+  &__features-bottom
+    padding-bottom: 18.5rem
+    position: relative
+  &__features-circle
+    @include flex-center
+    justify-content: center
+    border-radius: 50%
+    background: $color-blue-dark
+    & p
+      font-family: $font-family
+      font-weight: 200;
+      font-size: 3rem
+      line-height: 1.2
+      letter-spacing: -0.04em
+      text-align: center
+      color: #f1f1ff
+
+
+  &__features-wrap
+    max-width: 52.4rem
+
+  &__features-wrap2
+    padding-top: 20rem
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+
+  &__features-text2
+    max-width: 50.9rem
+
+.services
+  &__features
+    @include flex-center
+    justify-content: space-between
+    padding-bottom: 18rem
+    padding-top: 9.3rem
+    background: url('../img/services__linie.svg'),url('../img/services__linie.svg'), url("../img/services__pic1.svg"), url('../img/services__pic2.svg')
+    background-position: 25% 28%, 71% 28%, 0 100%, 100% 100%
+    background-size: 18.3rem .4rem,18.3rem .4rem, 10.3rem auto, 38.1rem auto
+    background-repeat: no-repeat
+
+.feature-card
+  @include flex-center
+  flex-direction: column
+
+  &__img
+    width: 16rem
+    height: 12rem
+    margin-bottom: 3rem
+
+  &__descr
+    font-family: $font-family
+    font-weight: 500
+    font-size: 3.2rem
+    line-height: 1.20
+    text-align: center
+    color: #515886
+
+.card-1
+  max-width: 23.8rem
+.card-2
+  max-width: 35.6rem
+.card-3
+  max-width: 30.5rem
+
+.price
+  &__block
+    position: relative
+  
+
+  &__inner
+    background: $color-blue-dark
+    padding-top: 3rem
+    padding-bottom: 3rem
+ 
+  &__img
+    position: absolute
+    right: 15%
+    bottom: 0
+    width: 30rem
+    
+    
+
+  &__title
+    font-family: $font-family
+    font-weight: 400
+    font-size: 4.8rem
+    letter-spacing: -0.01em
+    color: $color-blue-light
+    & span
+      font-family: $font4
+      font-size: 5.2rem
+
+  &__wrap
+    max-width: 61.2rem
+    padding-top: 8.4rem
+    padding-bottom: 8.4rem
+    position: relative
+
+  &__text
+    font-family: $font-family
+    font-weight: 400
+    font-size: 2.8rem
+    line-height: 1.2
+    letter-spacing: -0.04em
+    color: #6a71a1
+    margin-bottom: 3.8rem     
+
+  &__contacts
+    font-family: $font-family
+    font-weight: 400
+    font-size: 4rem
+    line-height: 1.27
+    letter-spacing: -0.04em
+    color: #6a71a1
+    margin-bottom: .7rem
+    &:last-of-type
+      margin-bottom: 3.8rem
+  &__left-btn
+    padding: 1.2rem 5.1rem
+.contacts
+  &__inner
+    padding: 11rem 0
+  &__title-h2
+    display: block
+    margin-right: 0
+    margin-bottom: 6.7rem
+
+
+.contacts
+		&__inner
+      
+
+		&__title-h2
+
+		&__box
+      display: flex
+      justify-content: space-between
+
+		&__form
+      width: 56.2rem
+      padding: 3.9rem 4.5rem 4.9rem 4.5rem
+      margin-right: 3rem
+      @include form-border
+      &-title
+        font-family: $font-family        
+        font-weight: 400
+        font-size: 4.8rem
+        letter-spacing: -0.01em
+        text-align: center
+        color: #444a75
+        margin-bottom: 1.9rem
+      &-text
+        font-family: $font-family
+        font-weight: 400
+        font-size: 3.2rem
+        line-height: 1.17
+        letter-spacing: -0.04em
+        text-align: center
+        color: #444a75
+        margin-bottom: 4.5rem
+
+		&__input
+      width: 100%
+      padding: 1.8rem 2rem
+      @include form-border
+      background: transparent
+
+
+
+		&__box-right
+      max-width: 43.6rem
+
+		&__box-right-top
+      margin-bottom: 7.3rem
+
+		&__subtitle
+      font-family: $font-family
+      font-weight: 400
+      font-size: 4.8rem
+      line-height: 1.08
+      letter-spacing: -0.04em
+      color: #f1f1ff
+      background-color: $color-blue-dark
+      padding: 1.3rem 3.8rem
+      border-radius: 1.8rem
+      margin-bottom: 2.7rem
+
+		&__text
+      font-family: $font-family
+      font-weight: 300
+      font-size: 3.2rem
+      line-height: 1.27
+      letter-spacing: -0.04em
+      color: $color-blue-dark
+
+		&__box-right-bottom
+
+.container
+
+.main
+		&__title-h2
+
+
+.title-h2--dark
+
+.title-center
+
+.input
+		&__text
+      display: block
+      width: 100%
+      margin-bottom: 2.5rem
+
+
+::placeholder
+  font-family: $font-family
+  font-weight: 200
+  font-size: 2.2rem
+  line-height: 1.2
+  letter-spacing: -0.01em
+  color: #444a75
+
+textarea
+  width: 100%
+  resize: none
+  height: 20rem
+  max-height: auto
+  overflow: hidden
+textarea:focus::placeholder 
+  color: transparent
+
+.textarea
+  margin-bottom: 2.4rem
+
+.contacts
+		&__btn
+      display: block
+      width: 100%
+      margin-bottom: 1.5rem
+
+.checkbox
+  // max-width: 28.2rem
+  display: flex
+.checkbox-label
+  padding-left: 17px
+  font-family: $font-family
+  font-weight: 300;
+  font-size: 1.7rem
+  line-height: 1.5
+  letter-spacing: -0.04em;
+  color: $color-blue-dark
+.checkbox-input
+  appearance: none
+  position: relative
+  width: 24px
+  height: 24px
+  background: #fff  
+  border-radius: 50%
+  border: 1px solid $color-blue-dark
+  transition: 500ms
+  &::after    
+    content: ""
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    width: 10px
+    height: 9px
+    font-size: 30px
+    background-image: url("../icons/check.svg")
+    background-repeat: no-repeat
+    transition: 500ms
+.checkbox-input:checked
+  background: #6A71A1
+  transition: 500ms
+.checkbox-input:hover
+  cursor: pointer
+.footer
+  
+	&__inner
+    width: 100%
+    min-height: 223px
+    background: url('../img/footer__bg.svg') center / cover no-repeat
+      
+
+	&__box
+    @include flex-center
+    justify-content: space-between
+    position: relative
+    top: 50%
+    transform: translateY(60%)
+
+	&__logo
+
+	&__nav
+
+	&__contacts
+
+	&__text
+    font-family: $second-family
+    font-weight: 500
+    font-size: 2rem
+    line-height: 1.27
+    letter-spacing: -0.04em
+    color: #f1f1ff
+    margin-bottom: 5px
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+

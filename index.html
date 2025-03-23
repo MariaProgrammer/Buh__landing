@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing starter</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <script src="js/inputmask.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="header__nav nav">
+          <img
+            src="img/header__logo.svg"
+            alt="Бухгалтерская служба логотип"
+            class="nav__logo"
+          />
+          <ul class="nav__list list-reset">
+            <li class="nav__list-item">
+              <a href="#about" class="nav__list-link">О компании</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="#services" class="nav__list-link">Услуги</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="#review" class="nav__list-link">Отзывы</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="#contacts" class="nav__list-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__left">
+          <h1 class="header__left-title">
+            Бухгалтерское обслуживание на аутсорсинге
+          </h1>
+          <div class="header__left-wrap">
+            <p class="header__left-descr text-descr">
+              Индивидуальный подход к каждому клиенту
+            </p>
+            <p class="header__left-descr text-descr">
+              Профессионализм каждого сотрудника
+            </p>
+            <p class="header__left-descr text-descr">
+              Надежный контроль за каждым документом
+            </p>
+          </div>
+
+          <a href="#" class="header__left-btn btn"> Получить консультацию </a>
+          <p class="header__left-contacts">+7 921 709-46-96</p>
+          <p class="header__left-contacts">8 (8152) 45-00-04</p>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="about" id="about">
+        <div class="inner">
+          <div class="container">
+            <div class="about__title main__title">
+              <h2 class="main__title-h2">О компании</h2>
+              <span class="main__linie"></span>
+              <span class="main__descr">20 лет опыта</span>
+            </div>
+          </div>
+        </div>
+        <div class="main__wrap-h3">
+          <div class="container">
+            <h3 class="main__h3 ta-right">
+              Сотрудничество с нами <span>облегчает</span><br />
+              управленческие задачи
+            </h3>
+          </div>
+        </div>
+
+        <div class="swiper1">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="swiper-slide__inner"></div>
+              <div class="container">
+                <div class="swiper-slide__container"></div>
+                <div class="swiper-slide__box">
+                  <div class="swiper-slide__left">
+                    <img src="icons/slider1__pic1.svg" alt="" />
+                    <h4 class="slide__title-h4">
+                      Организация бухгалтерского учета
+                    </h4>
+                  </div>
+                  <div class="swiper-slide__linie"></div>
+                  <div class="swiper-slide__right">
+                    <p class="swiper__slide-text text-descr">
+                      Проконсультируем по всем возникающим вопросам и подскажем
+                      правильные шаги
+                    </p>
+                    <p class="swiper__slide-text text-descr">
+                      Гарантируем профессиональный подход в решении задач,
+                      связанных с ведением учета
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__inner"></div>
+              <div class="container">
+                <div class="swiper-slide__container"></div>
+                <div class="swiper-slide__box">
+                  <div class="swiper-slide__left">
+                    <img src="icons/slider1__pic2.svg" alt="" />
+                    <h4 class="slide__title-h4">
+                      Минимизация налоговых платежей
+                    </h4>
+                  </div>
+                  <div class="swiper-slide__linie"></div>
+                  <div class="swiper-slide__right">
+                    <p class="swiper__slide-text text-descr">
+                      Организуем ведение и отражение всех финансовых операций в
+                      соответствии с законодательством
+                    </p>
+                    <p class="swiper__slide-text text-descr">
+                      Разработаем план налоговой оптимизации
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__inner"></div>
+              <div class="container cont-center">
+                <div class="swiper-slide__container"></div>
+                <div class="swiper-slide__box">
+                  <div class="swiper-slide__left">
+                    <img src="icons/slider1__pic3.svg" alt="" />
+                    <h4 class="slide__title-h4">
+                      Обеспечение эффективной работы
+                    </h4>
+                  </div>
+                  <div class="swiper-slide__linie"></div>
+                  <div class="swiper-slide__right">
+                    <p class="swiper__slide-text text-descr">
+                      Мы оперативно информируем вас обо всех изменениях в
+                      законодательстве, которые отражаются на хозяйственной
+                      деятельности вашего предприятия
+                    </p>
+                    <p class="swiper__slide-text text-descr">
+                      Наши специалисты помогут подготовить письма и запросы в
+                      налоговые органы для разрешения спорных вопросов
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination">
+            <span class="swiper-pagination-bullet"></span>
+            <span class="swiper-pagination-bullet"></span>
+            <span class="swiper-pagination-bullet"></span>
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper__container">
+            <div class="swiper__buttons">
+              <div class="swiper-button-prev1 swiper-button-disabled">
+                <img src="icons/arr__prev.svg" alt="" />
+              </div>
+              <div class="swiper-button-next1">
+                <img src="icons/arr__next.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__features">
+          <div class="about__features-top">
+            <div class="container">
+              <div class="about__features-wrap">
+                <h3 class="main__h3 margin__text24">
+                  <span>Аутсорсинг - </span><br />это когда все включено
+                </h3>
+                <p
+                  class="about__features-text text-descr dark-text margin__text24"
+                >
+                  Вы сэкономите на рабочем месте
+                </p>
+                <p class="about__features-text text-descr dark-text">
+                  Наши специалисты работают вне вашего офиса, поэтому вам не
+                  придется содержать еще одно рабочее место и еще один компьютер
+                  с программным обеспечением
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="about__features-bottom">
+            <div class="container">
+              <div class="about__features-wrap2">
+                <h3 class="main__h3 ta-right margin__text24">
+                  <span>Наши офисы </span>расположены <br />
+                  в Санкт-Петербурге и в Мурманске
+                </h3>
+                <p class="about__features-text2 text-descr dark-text ta-right">
+                  В настоящий момент на обслуживании находится более 100
+                  юридических лиц с различными системами налогообложения
+                </p>
+              </div>
+              <img
+                src="img/about__pic2.svg"
+                alt=""
+                class="about__features-img2"
+              />
+            </div>
+            <div class="about__features-circle circle-1">
+              <p>
+                Бухгалтерские<br />
+                услуги<br />
+                по всей России
+              </p>
+            </div>
+            <div class="about__features-circle circle-2">
+              <p>
+                Стаж<br />
+                сотрудников<br />
+                от 10 лет
+              </p>
+            </div>
+            <div class="about__features-circle circle-3">
+              <p>
+                Возможность<br />
+                сотрудничества<br />
+                в дистанционном<br />
+                формате
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="services" id="services">
+        <div class="inner">
+          <div class="container">
+            <div class="about__title main__title">
+              <h2 class="main__title-h2">Услуги</h2>
+              <span class="main__linie"></span>
+              <span class="main__descr"
+                >Полный комплекс налогового<br />
+                и бухгалтерского учета</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="main__wrap-h3">
+          <div class="container">
+            <h3 class="main__h3 ta-right">
+              Решаем старые <span>проблемы</span><br />
+              и не создаем новых
+            </h3>
+          </div>
+        </div>
+
+        <div class="swiper2">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide slide-1">
+              <h5 class="title__slide-h5">Анализ первичной документации</h5>
+              <img src="icons/slide-ico1.svg" alt="" />
+              <div class="cover cover1">
+                <p>
+                  Анализ и оценка первичной документации позволит составить
+                  полный перечень расходов, доходов организации
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide slide-2">
+              <h5 class="title__slide-h5">
+                Текущее ведение бухгалтерского учета
+              </h5>
+              <img src="icons/slide-ico2.svg" alt="" />
+              <div class="cover cover2">
+                <p>
+                  Бухгалтерское обслуживание покажет финансовую ситуацию в
+                  компании: выручку, прибыль, размер основных средств,
+                  дебиторскую и кредиторскую задолженность
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide slide-3">
+              <h5 class="title__slide-h5">
+                Расчет<br />
+                налогов
+              </h5>
+              <img src="icons/slide-ico3.svg" alt="" />
+              <div class="cover cover3">
+                <p>
+                  Правильное формирование налоговой базы и оптимизация налоговых
+                  выплат способствуют развитию предприятия
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide slide-4">
+              <h5 class="title__slide-h5">
+                Оформление бухгалтерской документации
+              </h5>
+              <img src="icons/slide-ico4.svg" alt="" />
+              <div class="cover cover4">
+                <p>
+                  Оформление документов важно и для структурирования данных
+                  бухгалтерского учета, и для определения налоговых обязательств
+                  организации
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide slide-5">
+              <h5 class="title__slide-h5">Расчёт заработной платы</h5>
+              <img src="icons/slide-ico5.svg" alt="" />
+              <div class="cover cover5">
+                <p>
+                  Анализ и оценка первичной документации позволит составить
+                  полный перечень расходов, доходов организации
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper__container">
+            <div class="swiper__buttons">
+              <div class="swiper-button-prev2 swiper-button-disabled">
+                <img src="icons/arr__prev.svg" alt="" />
+              </div>
+              <div class="swiper-button-next2">
+                <img src="icons/arr__next.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="services__features">
+            <div class="services__features-card feature-card">
+              <img
+                class="feature-card__img"
+                src="icons/serv__icon1.svg"
+                alt=""
+              />
+              <p class="feature-card__descr card-1">
+                Знание нюансов учета работы на маркетплейсах
+              </p>
+            </div>
+            <div class="services__features-card feature-card">
+              <img
+                class="feature-card__img"
+                src="icons/serv__icon2.svg"
+                alt=""
+              />
+              <p class="feature-card__descr card-2">
+                Опыт работы с цифровой логистической платформой “Монополия”
+              </p>
+            </div>
+            <div class="services__features-card feature-card">
+              <img
+                class="feature-card__img"
+                src="icons/serv__icon3.svg"
+                alt=""
+              />
+              <p class="feature-card__descr card-3">
+                Качественный учет продаж алкогольной и табачной продукции
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="price">
+        <div class="price__inner">
+          <div class="container">
+            <h3 class="price__title"><span>Цена </span>вопроса?</h3>
+          </div>
+        </div>
+        <div class="price__block">
+          <div class="container">
+            <div class="price__wrap">
+              <p class="price__text">
+                Стоимость бухгалтерского обслуживания индвидуальна и зависит от
+                объема вашего документооборота, то есть от объема работы наших
+                специалистов.
+              </p>
+              <p class="price__text">
+                Оставьте заявку на бесплатную консультацию для уточнения
+                стоимости обслуживания или свяжитесь с нами:
+              </p>
+              <p class="price__contacts">+7 921 709-46-96</p>
+              <p class="price__contacts">8 (8152) 45-00-04</p>
+              <a href="#" class="price__left-btn btn btn--dark">
+                Оставить заявку
+              </a>
+            </div>
+            <img src="img/price__pic.svg" alt="" class="price__img" />
+          </div>
+        </div>
+      </section>
+      <section class="review" id="review">
+        <div class="inner">
+          <div class="container">
+            <div class="review__title main__title">
+              <h2 class="main__title-h2">отзывы</h2>
+              <span class="main__linie"></span>
+              <span class="main__descr"
+                >Ценим наших клиентов,<br />
+                и это взаимно</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="swiper3__container">
+          <div class="container">
+            <div class="swiper3">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="img/review__1-lg.jpg" class="swiper-slide__link1">
+                    <img src="img/review_1.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="img/review__2-lg.jpg" class="swiper-slide__link2">
+                    <img src="img/review_2.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="img/review__3-lg.jpg" class="swiper-slide__link3">
+                    <img src="img/review_3.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="img/review__4-lg.jpg" class="swiper-slide__link4">
+                    <img src="img/review_4.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="img/review__5-lg.jpg" class="swiper-slide__link5">
+                    <img src="img/review_5.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="img/review__6-lg.jpg" class="swiper-slide__link6">
+                    <img src="img/review_6.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="img/review__7-lg.jpg" class="swiper-slide__link7">
+                    <img src="img/review_7.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="img/review__8-lg.jpg" class="swiper-slide__link8">
+                    <img src="img/review_8.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="img/review__9-lg.jpg" class="swiper-slide__link9">
+                    <img src="img/review_9.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="img/review__10-lg.jpg" class="swiper-slide__lin10">
+                    <img src="img/review_10.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="img/review__11-lg.jpg" class="swiper-slide__link11">
+                    <img src="img/review_11.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="img/review__12-lg.jpg" class="swiper-slide__link12">
+                    <img src="img/review_12.jpg" alt="" />
+                  </a>
+                </div>
+
+                <!-- Slides -->
+              </div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper__container">
+                <div class="swiper__buttons">
+                  <div class="swiper-button-prev3 swiper-button-disabled">
+                    <img src="icons/arr__prev.svg" alt="" />
+                  </div>
+                  <div class="swiper-button-next3">
+                    <img src="icons/arr__next.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contacts" id="contacts">
+        <div class="container">
+          <div class="contacts__inner">
+            <h2
+              class="main__title-h2 contacts__title-h2 title-h2--dark title-center"
+            >
+              Контакты
+            </h2>
+            <div class="contacts__box">
+              <form action="mail.php" class="contacts__form" id="form1">
+                <h3 class="contacts__form-title">Остались вопросы?</h3>
+                <p class="contacts__form-text">Оставьте заявку<br>
+                  на бесплатную консультацию</p>
+                <div class="input__text">
+                  <label for="name"></label>
+                  <input
+                    class="contacts__input"
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Ваше имя"
+                  />
+                  <div class="placeholder" id="placeholder1"></div>
+                </div>
+
+                <div class="input__text">
+                  <label for="tel"></label>
+                  <input
+                    class="contacts__input"
+                    type="tel"
+                    name="tel"
+                    id="tel"
+                    placeholder="Ваш номер телефона"
+                    autocomplete="off"
+                  />
+                </div>
+
+                <textarea
+                  class="contacts__input textarea"
+                  name="textarea"
+                  id="msg"
+                  rows="7"
+                  placeholder="Ваш комментарий"
+                ></textarea>
+
+                <button
+                  type="submit"
+                  class="btn btn-reset btn--dark contacts__btn"
+                  id="btn1"
+                >
+                  Оставить заявку
+                </button>
+                <div class="checkbox">
+                  <input class="checkbox-input" type="checkbox" id="checkbox2" checked>
+                  <label class="checkbox-label" for="checkbox2">
+                    Нажимая на кнопку, Вы даете согласие<br> на обработку персональных данных
+                  </label>
+                </div>
+                
+              </form>
+              <div class="contacts__box-right">
+                <div class="contacts__box-right-top">
+                  <div class="contacts__subtitle">Мурманск</div>
+                  <p class="contacts__text">ул. Самойловой, д. 18, оф. 41</p>
+                  <p class="contacts__text">8 (8152) 45-00-04</p>
+                  <p class="contacts__text">+7 921 709-46-96</p>
+                  <p class="contacts__text">murmansk@buhsl51.ru</p>
+                </div>
+                <div class="contacts__box-right-bottom">
+                  <div class="contacts__subtitle">Санкт-Петербург</div>
+                  <p class="contacts__text">БЦ “Маяк”</p>
+                  <p class="contacts__text">пр. Московский, д. 91А, оф. 502</p>
+                  <p class="contacts__text">8 (812) 616-00-16</p>
+                  <p class="contacts__text">+7 931 344-10-94</p>
+                  <p class="contacts__text">spb@buhsl51.ru</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="container">
+          <div class="footer__box">
+            <img src="img/footer__logo.svg" alt="" class="footer__logo">
+            <nav class="footer__nav nav">
+              <ul class="nav__list list-reset">
+                <li class="nav__list-item">
+                  <a href="#about" class="nav__list-link">О компании</a>
+                </li>
+                <li class="nav__list-item">
+                  <a href="#services" class="nav__list-link">Услуги</a>
+                </li>
+                <li class="nav__list-item">
+                  <a href="#review" class="nav__list-link">Отзывы</a>
+                </li>
+                <li class="nav__list-item">
+                  <a href="#contacts" class="nav__list-link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="footer__contacts">
+              <p class="footer__text">+7 921 709-46-96</p>
+              <p class="footer__text">8 (8152) 45-00-04</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/just-validate.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

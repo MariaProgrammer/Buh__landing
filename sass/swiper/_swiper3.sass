@@ -1,0 +1,71 @@
+
+.swiper3__container
+  background: url('../img/swiper3__bg.svg'), #6A71A1
+  background-position: center
+  background-size: 90% auto
+  background-repeat: no-repeat
+
+.swiper3
+  height: 50.6rem !important
+  width: calc(100vw-30px) !important
+  position: relative
+  overflow: hidden
+  
+  
+ 
+  & .swiper__wrapper
+    width: 107.1rem !important
+    height: 397rem !important
+    -webkit-transition-timing-function: linear !important;
+    transition-timing-function: linear !important;
+    
+    
+    
+  & .swiper-slide 
+    width: 28.1rem !important
+    height: 39.7rem !important
+    margin: auto 0
+    // margin-right: 11.4rem
+    
+    & img
+      display: block
+      width: 100%
+      max-width: 100%
+      height: 100%
+      text-align: center
+    &    
+  
+    
+      
+  & .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after 
+    content: ''
+  & .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after 
+    content: ''
+  & .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction
+    position: absolute
+    left: 0
+    bottom: 3.8rem  
+  
+  & .swiper__container
+    position: absolute
+    left: 50%
+    top: 50%
+    width: 100%  
+    z-index: 10
+    transform: translate(-50%, -50%)
+  & .swiper__buttons
+    @include flex-center
+    justify-content: space-between  
+    // max-width: 1248px
+    padding: 0 15px
+    margin: 0 auto
+    z-index: 10
+
+  & .swiper-button-prev3, .swiper-button-next3
+    width: 6.4rem
+    height: 6.4rem
+    & img
+      width: 100%
+  & .swiper-button-prev3.swiper-button-disabled, .swiper-button-next3.swiper-button-disabled
+    opacity: 0 !important
+  
