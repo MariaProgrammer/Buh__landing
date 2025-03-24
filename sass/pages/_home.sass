@@ -13,6 +13,8 @@
     height: 8.7rem
     justify-content: space-between
     margin-bottom: 11.8rem
+  &__pic-mobile
+    display: none
   &__left
     max-width: 55%
     &-wrap
@@ -29,6 +31,10 @@
       width: 48.8rem
       height: 5.3rem
       margin-bottom: 4.3rem
+      &-mobile
+        width: 48.8rem
+        height: 6rem
+        display: none
 
 .nav__logo
   width: 23%
@@ -79,6 +85,7 @@
   &__features
     @include flex-center
     justify-content: space-between
+    
     padding-bottom: 18rem
     padding-top: 9.3rem
     background: url('../img/services__linie.svg'),url('../img/services__linie.svg'), url("../img/services__pic1.svg"), url('../img/services__pic2.svg')
@@ -125,8 +132,6 @@
     right: 15%
     bottom: 0
     width: 30rem
-    
-    
 
   &__title
     font-family: $font-family
@@ -165,6 +170,14 @@
       margin-bottom: 3.8rem
   &__left-btn
     padding: 1.2rem 5.1rem
+  &__left-btn--mobile
+    padding: 1.2rem 5.1rem
+    display: none
+  &__img-box
+    display: none
+.review
+  &__img-bottom-mob
+    display: none
 .contacts
   &__inner
     padding: 11rem 0
@@ -329,16 +342,19 @@ textarea:focus::placeholder
     width: 100%
     min-height: 223px
     background: url('../img/footer__bg.svg') center / cover no-repeat
+    
       
 
 	&__box
     @include flex-center
     justify-content: space-between
-    position: relative
-    top: 50%
-    transform: translateY(60%)
+    padding-top: 8.5rem
+    
 
 	&__logo
+    display: block
+    width: 9.1rem
+    height: auto
 
 	&__nav
 

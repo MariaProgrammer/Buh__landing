@@ -312,18 +312,22 @@ const swiper2 = new Swiper('.swiper2', {
   //   delay: 3000,
   //   disableOnInteraction: false,        
   // },
-	// breakpoints: {
-  //   // when window width is >= 320px
-	// 	300: {
-  //     slidesPerView: 1,
-  //     spaceBetween: 12
-  //   },
+	breakpoints: {
+     // when window width is >= 320px
+		300: {
+      slidesPerView: 1,
+      spaceBetween: 12
+    },
+		576: {
+      slidesPerView: 2,
+      spaceBetween: 12
+    },
    
-  //   when window width is >= 480px
-  //   767: {
-  //     slidesPerView: 2,
-  //     spaceBetween: 12
-  //   },
+    //when window width is >= 480px
+    767: {
+      slidesPerView: 4,
+      spaceBetween: 12
+    }
   //   // when window width is >= 640px
   //   958: {
   //     slidesPerView: 2,
@@ -333,7 +337,7 @@ const swiper2 = new Swiper('.swiper2', {
   //     slidesPerView: 3,
   //     spaceBetween: 30
   //   }
-  // },
+  },
 	// pagination:	{
 	// 	el: '.swiper-pagination',
 	// 	clickable: true,
@@ -430,46 +434,51 @@ document.addEventListener('scroll', function () {
 //подключение слайдера-3
 const swiper3 = new Swiper('.swiper3', {
 	direction: 'horizontal',
-	loop: true,
+	loop: false,
 	slidesPerView: 3,
   slidesPerGroup: 2,
-	spaceBetween: 100,
-  centeredSlides: true,
-  centerInsufficientSlides: true,	
-  createElements: true,
-  cssMode: true,
+	spaceBetween: 140,
+  // centeredSlides: true,
+  // centerInsufficientSlides: true,	
+  // createElements: true,
+  // cssMode: true,
   allowTouchMove: true,
   grabCursor: true,  
 	navigation: {
 		nextEl: '.swiper-button-next3',
 		prevEl: '.swiper-button-prev3',
 	},
-  // autoplay: {
-  //   delay: 3000,
-  //   disableOnInteraction: false,        
-  // },
-	// breakpoints: {
-  //   // when window width is >= 320px
-	// 	300: {
-  //     slidesPerView: 1,
-  //     spaceBetween: 12
-  //   },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,        
+  },
+	breakpoints: {
+    // when window width is >= 320px
+		300: {
+      slidesPerView: 1,
+      spaceBetween: 12
+    },
+		350: {
+      slidesPerView: 2,
+      spaceBetween: 16,
+      slidesPerGroup: 1
+    },
    
-  //   when window width is >= 480px
-  //   767: {
-  //     slidesPerView: 2,
-  //     spaceBetween: 12
-  //   },
-  //   // when window width is >= 640px
-  //   958: {
-  //     slidesPerView: 2,
-  //     spaceBetween: 12
-  //   },
-	// 	1279: {
-  //     slidesPerView: 3,
-  //     spaceBetween: 30
-  //   }
-  // },
+    // when window width is >= 480px
+    767: {
+      slidesPerView: 3,
+      spaceBetween: 80
+    },
+    // when window width is >= 640px
+    958: {
+      slidesPerView: 3,
+      spaceBetween: 100
+    },
+		1279: {
+      slidesPerView: 3,
+      spaceBetween: 140
+    }
+  },
 	// pagination:	{
 	// 	el: '.swiper-pagination',
 	// 	clickable: true,

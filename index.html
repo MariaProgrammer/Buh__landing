@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing starter</title>
+    <title>Бухгалтерская служба</title>
     <link
       rel="stylesheet"
       type="text/css"
@@ -45,6 +45,7 @@
             </li>
           </ul>
         </nav>
+        <img src="img/header__pic.svg" alt="" class="header__pic-mobile">
         <div class="header__left">
           <h1 class="header__left-title">
             Бухгалтерское обслуживание на аутсорсинге
@@ -61,7 +62,12 @@
             </p>
           </div>
 
-          <a href="#" class="header__left-btn btn"> Получить консультацию </a>
+          <a href="#contacts" class="header__left-btn btn">
+            Получить консультацию
+          </a>
+          <a href="#contacts" class="header__left-btn-mobile btn btn--dark">
+            Оставить заявку
+          </a>
           <p class="header__left-contacts">+7 921 709-46-96</p>
           <p class="header__left-contacts">8 (8152) 45-00-04</p>
         </div>
@@ -69,7 +75,7 @@
     </header>
     <main class="main">
       <section class="about" id="about">
-        <div class="inner">
+        <div class="inner inner__mob">
           <div class="container">
             <div class="about__title main__title">
               <h2 class="main__title-h2">О компании</h2>
@@ -78,9 +84,9 @@
             </div>
           </div>
         </div>
-        <div class="main__wrap-h3">
+        <div class="main__wrap-h3 about__wrap-h3--mob">
           <div class="container">
-            <h3 class="main__h3 ta-right">
+            <h3 class="main__h3 ta-right main__h3--mob">
               Сотрудничество с нами <span>облегчает</span><br />
               управленческие задачи
             </h3>
@@ -91,23 +97,28 @@
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
-              <div class="swiper-slide__inner"></div>
+              <div class="swiper-slide__inner">
+                <div class="swiper-slide__container--inner1"></div>
+              </div>
               <div class="container">
-                <div class="swiper-slide__container"></div>
+                <div class="swiper-slide__container">
+                  
+                </div>
                 <div class="swiper-slide__box">
                   <div class="swiper-slide__left">
-                    <img src="icons/slider1__pic1.svg" alt="" />
+                    <img class="swiper1__img" src="icons/slider1__pic1.png" alt="" />
+                    
                     <h4 class="slide__title-h4">
                       Организация бухгалтерского учета
                     </h4>
                   </div>
                   <div class="swiper-slide__linie"></div>
                   <div class="swiper-slide__right">
-                    <p class="swiper__slide-text text-descr">
+                    <p class="swiper__slide-text text-descr text-circle">
                       Проконсультируем по всем возникающим вопросам и подскажем
                       правильные шаги
                     </p>
-                    <p class="swiper__slide-text text-descr">
+                    <p class="swiper__slide-text text-descr text-circle">
                       Гарантируем профессиональный подход в решении задач,
                       связанных с ведением учета
                     </p>
@@ -116,23 +127,25 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="swiper-slide__inner"></div>
+              <div class="swiper-slide__inner">
+                <div class="swiper-slide__container--inner2"></div>
+              </div>
               <div class="container">
                 <div class="swiper-slide__container"></div>
                 <div class="swiper-slide__box">
                   <div class="swiper-slide__left">
-                    <img src="icons/slider1__pic2.svg" alt="" />
+                    <img class="swiper1__img" src="icons/slider1__pic2.svg" alt="" />
                     <h4 class="slide__title-h4">
                       Минимизация налоговых платежей
                     </h4>
                   </div>
                   <div class="swiper-slide__linie"></div>
                   <div class="swiper-slide__right">
-                    <p class="swiper__slide-text text-descr">
+                    <p class="swiper__slide-text text-descr text-circle">
                       Организуем ведение и отражение всех финансовых операций в
                       соответствии с законодательством
                     </p>
-                    <p class="swiper__slide-text text-descr">
+                    <p class="swiper__slide-text text-descr text-circle">
                       Разработаем план налоговой оптимизации
                     </p>
                   </div>
@@ -140,24 +153,26 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="swiper-slide__inner"></div>
+              <div class="swiper-slide__inner">
+                <div class="swiper-slide__container--inner3"></div>
+              </div>
               <div class="container cont-center">
                 <div class="swiper-slide__container"></div>
                 <div class="swiper-slide__box">
                   <div class="swiper-slide__left">
-                    <img src="icons/slider1__pic3.svg" alt="" />
+                    <img class="swiper1__img" src="icons/slider1__pic3.svg" alt="" />
                     <h4 class="slide__title-h4">
                       Обеспечение эффективной работы
                     </h4>
                   </div>
                   <div class="swiper-slide__linie"></div>
                   <div class="swiper-slide__right">
-                    <p class="swiper__slide-text text-descr">
+                    <p class="swiper__slide-text text-descr text-circle">
                       Мы оперативно информируем вас обо всех изменениях в
                       законодательстве, которые отражаются на хозяйственной
                       деятельности вашего предприятия
                     </p>
-                    <p class="swiper__slide-text text-descr">
+                    <p class="swiper__slide-text text-descr text-circle ">
                       Наши специалисты помогут подготовить письма и запросы в
                       налоговые органы для разрешения спорных вопросов
                     </p>
@@ -177,10 +192,12 @@
           <div class="swiper__container">
             <div class="swiper__buttons">
               <div class="swiper-button-prev1 swiper-button-disabled">
-                <img src="icons/arr__prev.svg" alt="" />
+                <img src="icons/slider1__prev.svg" alt="" />
+                
               </div>
               <div class="swiper-button-next1">
-                <img src="icons/arr__next.svg" alt="" />
+                <img src="icons/slider1__next.svg" alt="" />
+                
               </div>
             </div>
           </div>
@@ -190,7 +207,7 @@
           <div class="about__features-top">
             <div class="container">
               <div class="about__features-wrap">
-                <h3 class="main__h3 margin__text24">
+                <h3 class="main__h3 margin__text24 main__h3--dark-mob">
                   <span>Аутсорсинг - </span><br />это когда все включено
                 </h3>
                 <p
@@ -210,7 +227,7 @@
             <div class="container">
               <div class="about__features-wrap2">
                 <h3 class="main__h3 ta-right margin__text24">
-                  <span>Наши офисы </span>расположены <br />
+                  <span>Наши офисы </span>расположены <br>
                   в Санкт-Петербурге и в Мурманске
                 </h3>
                 <p class="about__features-text2 text-descr dark-text ta-right">
@@ -262,8 +279,8 @@
             </div>
           </div>
         </div>
-        <div class="main__wrap-h3">
-          <div class="container">
+        <div class="main__wrap-h3 ">
+          <div class="container ">
             <h3 class="main__h3 ta-right">
               Решаем старые <span>проблемы</span><br />
               и не создаем новых
@@ -403,15 +420,25 @@
               </p>
               <p class="price__contacts">+7 921 709-46-96</p>
               <p class="price__contacts">8 (8152) 45-00-04</p>
-              <a href="#" class="price__left-btn btn btn--dark">
+              <a href="#contacts" class="price__left-btn btn btn--dark none">
+                Оставить заявку
+              </a>
+              <a href="#contacts" class="btn price__left-btn--mobile">
                 Оставить заявку
               </a>
             </div>
             <img src="img/price__pic.svg" alt="" class="price__img" />
           </div>
+          <div class="price__img-box">
+            
+            <img src="img/reviews__top.svg" alt="" class="price__img-mob" />
+
+          </div>
+          
         </div>
       </section>
-      <section class="review" id="review">
+     
+      <section class="review" id="review">        
         <div class="inner">
           <div class="container">
             <div class="review__title main__title">
@@ -496,15 +523,19 @@
               <div class="swiper__container">
                 <div class="swiper__buttons">
                   <div class="swiper-button-prev3 swiper-button-disabled">
-                    <img src="icons/arr__prev.svg" alt="" />
+                    <img src="icons/slider1__prev.svg" alt="" />
                   </div>
                   <div class="swiper-button-next3">
-                    <img src="icons/arr__next.svg" alt="" />
+                    <img src="icons/slider1__next.svg" alt="" />
                   </div>
                 </div>
               </div>
+              
             </div>
           </div>
+        </div>
+        <div class="review__box-bottom">
+          <img src="img/reviews__bottom.svg" alt="" class="review__img-bottom-mob" />
         </div>
       </section>
       <section class="contacts" id="contacts">
@@ -518,8 +549,10 @@
             <div class="contacts__box">
               <form action="mail.php" class="contacts__form" id="form1">
                 <h3 class="contacts__form-title">Остались вопросы?</h3>
-                <p class="contacts__form-text">Оставьте заявку<br>
-                  на бесплатную консультацию</p>
+                <p class="contacts__form-text">
+                  Оставьте заявку<br />
+                  на бесплатную консультацию
+                </p>
                 <div class="input__text">
                   <label for="name"></label>
                   <input
@@ -560,12 +593,17 @@
                   Оставить заявку
                 </button>
                 <div class="checkbox">
-                  <input class="checkbox-input" type="checkbox" id="checkbox2" checked>
+                  <input
+                    class="checkbox-input"
+                    type="checkbox"
+                    id="checkbox2"
+                    checked
+                  />
                   <label class="checkbox-label" for="checkbox2">
-                    Нажимая на кнопку, Вы даете согласие<br> на обработку персональных данных
+                    Нажимая на кнопку, Вы даете согласие<br />
+                    на обработку персональных данных
                   </label>
                 </div>
-                
               </form>
               <div class="contacts__box-right">
                 <div class="contacts__box-right-top">
@@ -593,7 +631,7 @@
       <div class="footer__inner">
         <div class="container">
           <div class="footer__box">
-            <img src="img/footer__logo.svg" alt="" class="footer__logo">
+            <img src="img/footer__logo.svg" alt="" class="footer__logo" />
             <nav class="footer__nav nav">
               <ul class="nav__list list-reset">
                 <li class="nav__list-item">
