@@ -16,7 +16,7 @@
     />
 
     <link rel="stylesheet" href="css/style.css" />
-    <!-- <script src="js/inputmask.min.js"></script> -->
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
@@ -70,6 +70,16 @@
           </a>
           <p class="header__left-contacts">+7 921 709-46-96</p>
           <p class="header__left-contacts">8 (8152) 45-00-04</p>
+        </div>
+        <div class="header__partners">
+          <span>Партнеры</span>
+          <a class="header__partners-link" href="https://vk.com/moibiz51" target="_blank" >
+            <img src="icons/partner_1.svg" alt="">
+          </a>
+          <a class="header__partners-link" href="https://alfabank.ru/" target="_blank">
+            <img src="icons/partner_2.svg" alt="">
+          </a>
+          
         </div>
       </div>
     </header>
@@ -547,7 +557,7 @@
               Контакты
             </h2>
             <div class="contacts__box">
-              <form action="mail.php" class="contacts__form" id="form1">
+              <form action="mail.php" class="contacts__form" id="form">
                 <h3 class="contacts__form-title">Остались вопросы?</h3>
                 <p class="contacts__form-text">
                   Оставьте заявку<br />
@@ -600,8 +610,8 @@
                     checked
                   />
                   <label class="checkbox-label" for="checkbox2">
-                    Нажимая на кнопку, Вы даете согласие<br />
-                    на обработку персональных данных
+                    Нажимая на кнопку, Вы соглашаетесь с<br />
+                    <a class="checkbox-label-link" href="politics.html" target="_blank" rel="noopener noreferrer">политикой конфиденциальности</a>
                   </label>
                 </div>
               </form>
@@ -631,7 +641,14 @@
       <div class="footer__inner">
         <div class="container">
           <div class="footer__box">
-            <img src="img/footer__logo.svg" alt="" class="footer__logo" />
+            <div class="header__partners">
+              <a class="header__partners-link" href="https://vk.com/moibiz51" target="_blank" >
+                <img src="icons/partner_1.svg" alt="">
+              </a>
+              <a class="header__partners-link" href="https://alfabank.ru/" target="_blank">
+                <img src="icons/partner_2.svg" alt="">
+              </a>
+            </div>
             <nav class="footer__nav nav">
               <ul class="nav__list list-reset">
                 <li class="nav__list-item">
@@ -648,15 +665,12 @@
                 </li>
               </ul>
             </nav>
-            <div class="footer__contacts">
-              <p class="footer__text">+7 921 709-46-96</p>
-              <p class="footer__text">8 (8152) 45-00-04</p>
-            </div>
+            <img src="img/footer__logo.svg" alt="" class="footer__logo" />
           </div>
         </div>
       </div>
     </footer>
-
+    <script src="js/inputmask.min.js"></script>
     <script src="js/just-validate.min.js"></script>
     <script src="js/main.js"></script>
   </body>

@@ -17,6 +17,7 @@
     display: none
   &__left
     max-width: 55%
+    margin-bottom: 4rem
     &-wrap
       margin-bottom: 4.3rem
     &-title
@@ -35,6 +36,22 @@
         width: 48.8rem
         height: 6rem
         display: none
+
+  &__partners
+    display: flex
+    align-items: center
+    gap: 1.8rem
+    &-link
+      display: inline-block
+    span
+      display: inline-block
+      font-family: $font-family
+      font-weight: 700
+      font-size: 2.8rem
+      line-height: 1.20
+      letter-spacing: -0.05em
+      color: #fff
+      margin-right: 1.8rem
 
 .nav__logo
   width: 23%
@@ -305,11 +322,20 @@ textarea:focus::placeholder
 .checkbox-label
   padding-left: 17px
   font-family: $font-family
-  font-weight: 300;
+  font-weight: 300
   font-size: 1.7rem
   line-height: 1.5
   letter-spacing: -0.04em;
   color: $color-blue-dark
+  &-link
+    font-family: $font-family  
+    font-size: 1.7rem
+    line-height: 1.5
+    letter-spacing: -0.04em;
+    color: $color-blue-dark
+    font-weight: 400
+    text-decoration: underline
+    text-decoration-skip-ink: none
 .checkbox-input
   appearance: none
   position: relative
@@ -337,19 +363,20 @@ textarea:focus::placeholder
 .checkbox-input:hover
   cursor: pointer
 .footer
-  
+
 	&__inner
     width: 100%
     min-height: 223px
     background: url('../img/footer__bg.svg') center / cover no-repeat
-    
-      
+
 
 	&__box
     @include flex-center
     justify-content: space-between
     padding-top: 8.5rem
-    
+  
+  
+     
 
 	&__logo
     display: block

@@ -143,63 +143,63 @@ for (let anchor of anchors) {
 //   scrollAnimation();
 // });
 
-//Маска для тел
+// Маска для тел
 
-// let selector = document.getElementById("tel");
-// let im = new Inputmask("+7(999) 999-99-99");
-// im.mask(selector);
+let selector = document.getElementById("tel");
+let im = new Inputmask("+7(999) 999-99-99");
+im.mask(selector);
 
-//Валидация и отправка
+// Валидация и отправка
 
-// let validation = new JustValidate("form");
+let validation = new JustValidate("form");
 
-// validation
-//   .addField("#name", [
-//     {
-//       rule: "required",
-//       errorMessage: "Это обязательное поле для заполнения!",
-//     },
-//     {
-//       rule: "minLength",
-//       value: 2,
-//       errorMessage: "Минимум 2 символа!",
-//     },
-//   ])
-//   .addField("#tel", [
-//     {
-//       validator: (value) => {
-//         const phone = selector.inputmask.unmaskedvalue();
-//         return Boolean(Number(phone) && phone.length > 0);
-//       },
-//       errorMessage: "Введите телефон",
-//     },
-//     {
-//       validator: (value) => {
-//         const phone = selector.inputmask.unmaskedvalue();
-//         return Boolean(Number(phone) && phone.length === 10);
-//       },
-//       errorMessage: "Введите телефон полностью",
-//     },
-//   ])
-//   .onSuccess(async function () {
-//     let data = {
-//       name: document.getElementById("name").value,
-//       tel: selector.inputmask.unmaskedvalue(),
-//       msg: document.getElementById("msg").value,
-//     };
+validation
+  .addField("#name", [
+    {
+      rule: "required",
+      errorMessage: "Это обязательное поле для заполнения!",
+    },
+    {
+      rule: "minLength",
+      value: 2,
+      errorMessage: "Минимум 2 символа!",
+    },
+  ])
+  .addField("#tel", [
+    {
+      validator: (value) => {
+        const phone = selector.inputmask.unmaskedvalue();
+        return Boolean(Number(phone) && phone.length > 0);
+      },
+      errorMessage: "Введите телефон",
+    },
+    {
+      validator: (value) => {
+        const phone = selector.inputmask.unmaskedvalue();
+        return Boolean(Number(phone) && phone.length === 10);
+      },
+      errorMessage: "Введите телефон полностью",
+    },
+  ])
+  .onSuccess(async function () {
+    let data = {
+      name: document.getElementById("name").value,
+      tel: selector.inputmask.unmaskedvalue(),
+      msg: document.getElementById("msg").value,
+    };
 
-//     let response = await fetch("mail.php", {
-//       method: "POST",
-//       body: JSON.stringify(data),
-//       headers: {
-//         "Content-Type": "application/json; charset=UTF-8",
-//       },
-//     });
+    let response = await fetch("mail.php", {
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: {
+        "Content-Type": "application/json; charset=UTF-8",
+      },
+    });
 
-//     let result = await response.text();
+    let result = await response.text();
 
-//     // alert(result)
-//   });
+    // alert(result)
+  });
 
 //Плавное исчезновение placeholder
 

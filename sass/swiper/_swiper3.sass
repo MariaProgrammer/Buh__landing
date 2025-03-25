@@ -29,7 +29,20 @@
       max-width: 100%
       height: 100%
       text-align: center
-    &
+  & .swiper-button-prev3, .swiper-button-next3
+    width: 6.4rem 
+    height: 6.4rem
+    border-radius: 50%
+    border: 4px solid white
+    background: rgba(255, 255, 255, .2)
+    position: relative
+    & img
+      position: absolute
+      left: 50%
+      height: 50%
+      transform: translate(-50%, 50%)
+  & .swiper-button-prev3.swiper-button-disabled, .swiper-button-next3.swiper-button-disabled
+    opacity: 0 
 
   & .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after
     content: ''
@@ -45,21 +58,19 @@
     left: 50%
     top: 50%
     width: 100%
-    z-index: 10
     transform: translate(-50%, -50%)
-  & .swiper__buttons
+    z-index: 10
+  & .swiper__buttons    
     @include flex-center
-    justify-content: space-between
-    // max-width: 1248px
+    justify-content: space-between    
     padding: 0 15px
     margin: 0 auto
-    z-index: 10
+    
 
   & .swiper-button-prev3, .swiper-button-next3
     width: 6.4rem
     height: 6.4rem
-    & img
-      width: 100%
+   
   & .swiper-button-prev3.swiper-button-disabled, .swiper-button-next3.swiper-button-disabled
     opacity: 0 !important
  
