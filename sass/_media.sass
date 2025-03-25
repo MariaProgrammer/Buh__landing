@@ -10,7 +10,7 @@
     background-size: 60% auto, cover
     background-repeat: no-repeat
 
-@media ( max-width: 991px )      
+@media ( max-width: 991px )
   .nav
     &__logo
       width: 28%
@@ -29,20 +29,22 @@
       padding-top: 5rem
   .feature-card__descr
     font-size: 2.8rem
-  .footer__logo		
-		width: 8rem
+  .footer__logo
+    width: 8rem
 @media ( max-width: 780px )
   html
     font-size: 45%
   body
     background: $color-blue-light
-  .nav__logo 
+  .nav__logo
     width: 35%
-  .header 
-    width: 100%;
+  .header
+    width: 100%
     height: 100%
-    background: none    
+    background: none
     padding-top: 3.8rem
+    &__cont
+      position: relative
     &__nav
       margin-bottom: 8.5rem
     &__pic-mobile
@@ -51,22 +53,77 @@
       height: 100%
       object-fit: contain
       margin-bottom: 8.5rem
+    &__partners
+      display: none
     &__left
       max-width: 100%
       width: 100%
       text-align: center
+      &-wrap
+        margin-bottom: 20px
       &-btn
         display: none
         &-mobile
           display: block
+          width: 200px
+          height: 40px
           margin: 0 auto
-          margin-bottom: 8rem
+          margin-bottom: 58px
       &-title
         color: $color-blue-dark
+        margin-bottom: 20px
       &-contacts
         display: none
+      &-linie
+        text-align: center
+        margin-bottom: 25px
+        span
+          display: inline-block
+          width: 238px
+          height: 2px
+          background: #444A75
   .header__left-descr
     color: $color-blue-dark
+
+  .nav
+    &__list
+      display: none
+      &-item:not(:last-child)
+        margin-right: 0
+
+  .burger
+    &__menu
+      display: block
+      position: absolute
+      width: 100%
+      height: fit-content
+      left: 0
+      top: 0
+      z-index: 20
+      border-radius: 32px
+      background: $color-blue-light
+      transform: translateY(-1000px)
+      transition: transform 1s ease-out
+      &-list
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        gap: 22px
+        padding: 51px 80px 51px
+
+      &-link
+        text-decoration: none
+        font-family: $font-family
+        font-weight: 400
+        font-size: 25px
+        letter-spacing: -0.04em
+        text-align: center
+        color: #3e446d
+    &__menu.active
+      transform: translateY(0px)
+    &__button
+      display: block
   .main
     &__title
       justify-content: center
@@ -78,7 +135,7 @@
     //   background: $color-blue-dark-mob
     &__wrap-h3--mob
       background: $color-blue-dark-mob
-          
+
   .inner__mob
     background: $color-blue-dark-mob
     border-radius: 35px 35px 0 0
@@ -90,7 +147,7 @@
     & .swiper__buttons
       justify-content: center
       & .swiper-button-prev1, .swiper-button-next1
-        width: 6.4rem 
+        width: 6.4rem
         height: 6.4rem
         border-radius: 50%
         border: none
@@ -99,8 +156,8 @@
     & .swiper-pagination
       display: none
     &__img
-      margin-bottom: 0 
-    
+      margin-bottom: 0
+
     & .swiper-slide
       &__box
         flex-direction: column
@@ -126,8 +183,7 @@
         width: 100%
         height: 100%
         background: none
-        
-      
+
         &--inner1
           background: rgba(241, 241 , 255 , .3)
           width: 100%
@@ -156,7 +212,7 @@
   .slide__title-h4
     max-width: 65%
   .text-circle
-    position: relative    
+    position: relative
     padding-left: 30px
     &::before
       content: ''
@@ -172,15 +228,15 @@
   .about__features
     background: transparent
     padding-top: 0
-     
+
   .about__features-top
-    padding: 250px 0   
+    padding: 250px 0
     background: url('../img/about__features-bg.svg') center / cover no-repeat
 
   .about__features-wrap
     max-width: 70%
     position: relative
-    top: -227px 
+    top: -227px
   .main__h3--dark-mob
     color: $color-blue-light
   .about__features-text
@@ -189,7 +245,7 @@
 
     &__features
       flex-direction: column
-      align-items: stretch      
+      align-items: stretch
       background: url('../img/services__linie.svg'), url('../img/services__linie.svg'), url('../img/services__linie.svg'), url("../img/services__pic1.svg")
       background-position: 70% 21%, 70% 42%, 70% 63%, 50% 100%
       background-size: 18.3rem .4rem,18.3rem .4rem, 18.3rem .4rem, 10.3rem auto
@@ -205,21 +261,21 @@
   .feature-card__descr
     text-align: left
   .main .card-1
-    max-width: 50% 
+    max-width: 50%
   .main .card-2
-    max-width: 50% 
+    max-width: 50%
   .main .card-3
     max-width: 50%
-  
+
   .price
-    
+
     &__wrap
       padding-bottom: 20rem
       max-width: 65%
     &__block
       background: #6A71A1
       position: relative
-      
+
     &__text
       color: $color-blue-light
     &__contacts
@@ -227,8 +283,8 @@
     &__img
       right: 5%
       width: 40rem
-      opacity: .5   
-    
+      opacity: .5
+
     &__left-btn--mobile
       display: block
     &__img-box
@@ -243,7 +299,7 @@
       display: block
       width: 100%
       height: 100%
-      object-fit: 
+      object-fit:
 
   .none
     display: none
@@ -256,30 +312,29 @@
       object-fit: cover
       position: relative
       top: -10px
-  
+
   .swiper3__container
-      background: #414772
-  
+    background: #414772
+
   .swiper3
     padding-bottom: 70px
-      
+
     & .swiper__container
       top: 95% !important
-    
-      
+
     & .swiper__buttons
       justify-content: center
-      
+
     & .swiper-button-prev3
-      width: 6.4rem 
+      width: 6.4rem
       height: 6.4rem
       border-radius: 50%
       border: none
       background: none
       margin-right: 10px
-      
+
     & .swiper-button-next3
-      width: 6.4rem 
+      width: 6.4rem
       height: 6.4rem
       border-radius: 50%
       border: none
@@ -287,6 +342,8 @@
   .contacts
     &__inner
       padding-top: 0
+      position: relative
+      overflow: hidden
     &__title-h2
       color: transparent
       margin-bottom: 0
@@ -294,22 +351,56 @@
       flex-direction: column
     &__form
       width: 100%
-      border: none    
+      border: none
+  .footer
 
-       
-
-      
-
+    &-burger__button
+      display: block
+    &__nav
+      display: none
+    &-burger__menu
+      display: block
+      position: absolute
+      width: 100%
+      height: fit-content
+      left: 0
+      bottom: 60px
+      z-index: 20
+      border-radius: 32px
+      background: $color-blue-light
+      transform: translateY(1000px)
+      transition: transform 1s ease-out
+      &.active
+        transform: translateY(0px)
 @media ( max-width: 576px )
-  .price__img-box
-    bottom: -31px
-@media ( max-width: 359px )
+  .container
+    padding: 0 15px
+  .header
+    &__nav
+      margin-bottom: 30px
+    &__left-title
+      font-size: 4.4rem
+  .nav
+    &__logo
+      width: 50%
+  .burger
+    &__menu-list
+  .main
+    &__title-h2
+      font-size: 32px
+  .inner__mob
+    padding: 28px 0 28px 0
+  .price
+    &__img-box
+      bottom: -31px
+
+@media ( max-width: 360px )
   .container
     max-width: 320px
     padding: 0 15px
-
-
-
-
-
-
+  .header
+    &__left-title
+      font-size: 28px !important
+  .main
+    &__title-h2
+      font-size: 28px !important

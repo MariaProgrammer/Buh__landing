@@ -55,7 +55,11 @@
 
 .nav__logo
   width: 23%
-
+.burger
+  &__menu
+    display: none
+  &__button
+    display: none
 .about
   &__features
     padding-top: 20.4rem
@@ -65,7 +69,6 @@
     background-position: 0 0, 0 60rem
     background-size: contain, contain
     background-repeat: no-repeat
-    
 
   &__features-top
   &__features-bottom
@@ -78,13 +81,12 @@
     background: $color-blue-dark
     & p
       font-family: $font-family
-      font-weight: 200;
+      font-weight: 200
       font-size: 3rem
       line-height: 1.2
       letter-spacing: -0.04em
       text-align: center
       color: #f1f1ff
-
 
   &__features-wrap
     max-width: 52.4rem
@@ -102,7 +104,7 @@
   &__features
     @include flex-center
     justify-content: space-between
-    
+
     padding-bottom: 18rem
     padding-top: 9.3rem
     background: url('../img/services__linie.svg'),url('../img/services__linie.svg'), url("../img/services__pic1.svg"), url('../img/services__pic2.svg')
@@ -137,13 +139,12 @@
 .price
   &__block
     position: relative
-  
 
   &__inner
     background: $color-blue-dark
     padding-top: 3rem
     padding-bottom: 3rem
- 
+
   &__img
     position: absolute
     right: 15%
@@ -173,7 +174,7 @@
     line-height: 1.2
     letter-spacing: -0.04em
     color: #6a71a1
-    margin-bottom: 3.8rem     
+    margin-bottom: 3.8rem
 
   &__contacts
     font-family: $font-family
@@ -203,92 +204,113 @@
     margin-right: 0
     margin-bottom: 6.7rem
 
-
 .contacts
-		&__inner
-      
+  &__inner
 
-		&__title-h2
+  &__title-h2
 
-		&__box
-      display: flex
-      justify-content: space-between
+  &__box
+    display: flex
+    justify-content: space-between
 
-		&__form
-      width: 56.2rem
-      padding: 3.9rem 4.5rem 4.9rem 4.5rem
-      margin-right: 3rem
-      @include form-border
-      &-title
-        font-family: $font-family        
-        font-weight: 400
-        font-size: 4.8rem
-        letter-spacing: -0.01em
-        text-align: center
-        color: #444a75
-        margin-bottom: 1.9rem
-      &-text
-        font-family: $font-family
-        font-weight: 400
-        font-size: 3.2rem
-        line-height: 1.17
-        letter-spacing: -0.04em
-        text-align: center
-        color: #444a75
-        margin-bottom: 4.5rem
-
-		&__input
-      width: 100%
-      padding: 1.8rem 2rem
-      @include form-border
-      background: transparent
-
-
-
-		&__box-right
-      max-width: 43.6rem
-
-		&__box-right-top
-      margin-bottom: 7.3rem
-
-		&__subtitle
+  &__form
+    width: 56.2rem
+    padding: 3.9rem 4.5rem 4.9rem 4.5rem
+    margin-right: 3rem
+    @include form-border
+    &-title
       font-family: $font-family
       font-weight: 400
       font-size: 4.8rem
-      line-height: 1.08
-      letter-spacing: -0.04em
-      color: #f1f1ff
-      background-color: $color-blue-dark
-      padding: 1.3rem 3.8rem
-      border-radius: 1.8rem
-      margin-bottom: 2.7rem
-
-		&__text
+      letter-spacing: -0.01em
+      text-align: center
+      color: #444a75
+      margin-bottom: 1.9rem
+    &-text
       font-family: $font-family
-      font-weight: 300
+      font-weight: 400
       font-size: 3.2rem
-      line-height: 1.27
+      line-height: 1.17
       letter-spacing: -0.04em
-      color: $color-blue-dark
+      text-align: center
+      color: #444a75
+      margin-bottom: 4.5rem
 
-		&__box-right-bottom
+  &__input
+    width: 100%
+    padding: 1.8rem 2rem
+    @include form-border
+    background: transparent
 
-.container
+  &__box-right
+    max-width: 43.6rem
+
+  &__box-right-top
+    margin-bottom: 7.3rem
+
+  &__subtitle
+    font-family: $font-family
+    font-weight: 400
+    font-size: 4.8rem
+    line-height: 1.08
+    letter-spacing: -0.04em
+    color: #f1f1ff
+    background-color: $color-blue-dark
+    padding: 1.3rem 3.8rem
+    border-radius: 1.8rem
+    margin-bottom: 2.7rem
+
+  &__text
+    font-family: $font-family
+    font-weight: 300
+    font-size: 3.2rem
+    line-height: 1.27
+    letter-spacing: -0.04em
+    color: $color-blue-dark
 
 .main
-		&__title-h2
-
-
-.title-h2--dark
-
-.title-center
+  &__title-h2
 
 .input
-		&__text
-      display: block
-      width: 100%
-      margin-bottom: 2.5rem
+  &__text
+    display: block
+    width: 100%
+    margin-bottom: 2.5rem
 
+.contacts__input
+  position: relative
+.validity-icon
+  position: relative
+  left: 0
+  top: 0
+  z-index: 10
+.validity-icon::before
+  position: absolute
+  right: 30px
+  top: 0
+input:invalid:required.touched + .validity-icon::before
+  content: '✖'
+  color: #fa5454
+input:invalid:required.touched
+  border: 4px solid #fa5454
+
+input:valid.touched + .validity-icon::before
+  // content: '✓'
+  content: ''
+  width: 28px
+  height: 28px
+  background: url('../icons/galka.svg')
+
+[type="checkbox"]:invalid 
+  outline: 2px solid red
+  outline-offset: 2px
+
+input:focus
+  outline: none
+  border: 4px solid $color-blue-middle
+textarea:focus
+  outline: none
+  border: 4px solid $color-blue-middle
 
 ::placeholder
   font-family: $font-family
@@ -304,17 +326,17 @@ textarea
   height: 20rem
   max-height: auto
   overflow: hidden
-textarea:focus::placeholder 
+textarea:focus::placeholder
   color: transparent
 
 .textarea
   margin-bottom: 2.4rem
 
 .contacts
-		&__btn
-      display: block
-      width: 100%
-      margin-bottom: 1.5rem
+  &__btn
+    display: block
+    width: 100%
+    margin-bottom: 1.5rem
 
 .checkbox
   // max-width: 28.2rem
@@ -325,13 +347,13 @@ textarea:focus::placeholder
   font-weight: 300
   font-size: 1.7rem
   line-height: 1.5
-  letter-spacing: -0.04em;
+  letter-spacing: -0.04em
   color: $color-blue-dark
   &-link
-    font-family: $font-family  
+    font-family: $font-family
     font-size: 1.7rem
     line-height: 1.5
-    letter-spacing: -0.04em;
+    letter-spacing: -0.04em
     color: $color-blue-dark
     font-weight: 400
     text-decoration: underline
@@ -341,11 +363,11 @@ textarea:focus::placeholder
   position: relative
   width: 24px
   height: 24px
-  background: #fff  
+  background: #fff
   border-radius: 50%
   border: 1px solid $color-blue-dark
   transition: 500ms
-  &::after    
+  &::after
     content: ""
     position: absolute
     left: 50%
@@ -363,31 +385,40 @@ textarea:focus::placeholder
 .checkbox-input:hover
   cursor: pointer
 .footer
+  &__partners
+    display: flex
+    align-items: center
+    gap: 1.5rem
+    &-link
+      display: inline-block
 
-	&__inner
+  &__inner
     width: 100%
     min-height: 223px
     background: url('../img/footer__bg.svg') center / cover no-repeat
 
-
-	&__box
+  &__box
     @include flex-center
     justify-content: space-between
     padding-top: 8.5rem
-  
-  
-     
-
-	&__logo
-    display: block
+  &__logo
+    
     width: 9.1rem
     height: auto
 
-	&__nav
+  &__logo-img
+    display: block
+    width: 100%
+    height: 100%
+    object-fit: cover
+    
 
-	&__contacts
+  &__nav
 
-	&__text
+  &-burger__button
+    display: none
+
+  &__text
     font-family: $second-family
     font-weight: 500
     font-size: 2rem
@@ -395,18 +426,3 @@ textarea:focus::placeholder
     letter-spacing: -0.04em
     color: #f1f1ff
     margin-bottom: 5px
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-

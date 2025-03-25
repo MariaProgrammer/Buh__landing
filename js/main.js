@@ -1,3 +1,4 @@
+//открытие попапов из слайдера
 $(document).ready(function() {
   $(".swiper-slide__link1").fancybox();
   $(".swiper-slide__link2").fancybox();
@@ -29,120 +30,6 @@ for (let anchor of anchors) {
   });
 }
 
-
-
-// Burger
-// const burger = document.getElementById("burger");
-// const nav = document.getElementById("nav");
-// const links = Array.from(document.querySelectorAll("burger__menu-link"));
-
-// burger.addEventListener("click", () => {
-//   nav.classList.toggle("active");
-//   burger.classList.toggle("burger--active");
-//   // document.body.classList.toggle("stop-scroll");
-// });
-
-//cookies
-
-// const cookiesBtn = document.querySelector(".cookie__button");
-// const cookies = document.querySelector(".cookie");
-// function getCookies() {
-//   setTimeout(() => {
-//     cookies.classList.add("active");
-//   }, 2000);
-// }
-// cookiesBtn.addEventListener("click", function () {
-//   cookies.classList.remove("active");
-// });
-
-//Появление блоков по скроллу
-// const hero = document.querySelector(".hero");
-// const steps = document.querySelector(".steps");
-// const recent = document.querySelector(".recent");
-// const scrollCards = Array.from(document.querySelectorAll(".recent__card"));
-// const scrollCards1 = [scrollCards[0], scrollCards[1], scrollCards[2]];
-// const scrollCards2 = [scrollCards[3], scrollCards[4], scrollCards[5]];
-// const scrollCards3 = [scrollCards[6], scrollCards[7], scrollCards[8]];
-
-// const technique = document.querySelector(".technique");
-// const contacts = document.querySelector(".contacts");
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   setTimeout(() => {
-//     hero.classList.add("active");
-//     steps.classList.add("active");
-//     getCookies();
-//   }, 100);
-// });
-
-// document.addEventListener("scroll", function () {
-//   let scrollTop = window.scrollY;
-
-//   let heroHeight = hero.offsetHeight;
-//   let stepsHeight = heroHeight + steps.offsetHeight;
-//   let recentCards = stepsHeight + recent.offsetHeight;
-//   let recentCards2 = stepsHeight + recent.offsetHeight / 3;
-//   let recentCards5 = stepsHeight + recent.offsetHeight / 5;
-//   let techniqueHeight = recentCards + technique.offsetHeight / 3;
-
-  // if (scrollTop >= heroHeight / 3) {
-  //   steps.classList.add('active');
-  // } else {
-  //   steps.classList.remove('active');
-  // }
-
-//   if (scrollTop >= stepsHeight) {
-//     scrollCards1.forEach((card) => {
-//       card.classList.add("animation-class");
-//     });
-//   } else {
-//     scrollCards1.forEach((card) => {
-//       card.classList.remove("animation-class");
-//     });
-//   }
-
-//   if (scrollTop >= recentCards5) {
-//     scrollCards2.forEach((card) => {
-//       card.classList.add("animation-class");
-//     });
-//   } else {
-//     scrollCards2.forEach((card) => {
-//       card.classList.remove("animation-class");
-//     });
-//   }
-//   if (scrollTop >= recentCards5 + recentCards5 / 5) {
-//     scrollCards3.forEach((card) => {
-//       card.classList.add("animation-class");
-//     });
-//   } else {
-//     scrollCards3.forEach((card) => {
-//       card.classList.remove("animation-class");
-//     });
-//   }
-//   if (scrollTop >= recentCards2) {
-//     technique.classList.add("active");
-//   } else {
-//     technique.classList.remove("active");
-//   }
-//   if (scrollTop >= techniqueHeight) {
-//     contacts.classList.add("active");
-//   } else {
-//     contacts.classList.remove("active");
-//   }
-// });
-
-// let heroHeight = hero.offsetHeight;
-// let stepsHeight = hero.offsetHeight + steps.offsetHeight;
-
-// const scrollAnimation = () => {
-//   let windowCenter = window.innerHeight / 2 + window.scrollY;
-// };
-
-// scrollAnimation();
-// window.addEventListener("scroll", () => {
-//   scrollAnimation();
-// });
-
 // Маска для тел
 
 let selector = document.getElementById("tel");
@@ -171,6 +58,8 @@ validation
         const phone = selector.inputmask.unmaskedvalue();
         return Boolean(Number(phone) && phone.length > 0);
       },
+      rule: "minLength",
+      value: 10,
       errorMessage: "Введите телефон",
     },
     {
@@ -201,27 +90,6 @@ validation
     // alert(result)
   });
 
-//Плавное исчезновение placeholder
-
-// const nameField = document.getElementById("name");
-// const nameFieldCover = document.getElementById("placeholder1");
-
-// nameFieldCover.addEventListener("click", function () {
-//   nameFieldCover.style.opacity = "0";
-//   nameFieldCover.style.zIndex = "-1";
-//   nameField.focus();
-// });
-// nameField.addEventListener("focusout", function (e) {
-//   if (nameField.value == "") {
-//     nameFieldCover.style.opacity = "1";
-//     nameFieldCover.style.zIndex = "10";
-//     nameField.blur();
-//   }
-// });
-
-
-
-
 //подключение слайдера-1
 const swiper1 = new Swiper('.swiper1', {
 	direction: 'horizontal',
@@ -232,32 +100,7 @@ const swiper1 = new Swiper('.swiper1', {
 		nextEl: '.swiper-button-next1',
 		prevEl: '.swiper-button-prev1',
 	},
-  // autoplay: {
-  //   delay: 3000,
-  //   disableOnInteraction: false,        
-  // },
-	// breakpoints: {
-  //   // when window width is >= 320px
-	// 	300: {
-  //     slidesPerView: 1,
-  //     spaceBetween: 12
-  //   },
-   
-  //   when window width is >= 480px
-  //   767: {
-  //     slidesPerView: 2,
-  //     spaceBetween: 12
-  //   },
-  //   // when window width is >= 640px
-  //   958: {
-  //     slidesPerView: 2,
-  //     spaceBetween: 12
-  //   },
-	// 	1279: {
-  //     slidesPerView: 3,
-  //     spaceBetween: 30
-  //   }
-  // },
+  
 	pagination:	{
 		el: '.swiper-pagination',
 		clickable: true,
@@ -502,5 +345,24 @@ const swiper3 = new Swiper('.swiper3', {
     },5000)
     
   })
+//проверка валидности инпутов после blur
+  const inp = document.querySelectorAll('input')
+  inp.forEach(item => item.addEventListener('blur', function() {
+    this.classList.add('touched'); 
+  }));
+//подключение бургер меню
+const burgerButton = document.querySelector('.burger__button')
+const burgerMenu = document.querySelector('.burger__menu')
+burgerButton.addEventListener('click', function() {
+  burgerMenu.classList.toggle('active')
+})
+const footerBurgerButton = document.querySelector('.footer-burger__button')
+const footerBurgerMenu = document.querySelector('.footer-burger__menu')
+footerBurgerButton.addEventListener('click', function() {
+  footerBurgerMenu.classList.toggle('active')
+})
+
+
+  
   
 
