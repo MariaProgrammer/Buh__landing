@@ -69,7 +69,9 @@
     background-position: 0 0, 0 60rem
     background-size: contain, contain
     background-repeat: no-repeat
-
+    &-img2
+      width: 100vw
+      height: auto
   &__features-top
   &__features-bottom
     padding-bottom: 18.5rem
@@ -96,7 +98,9 @@
     display: flex
     flex-direction: column
     align-items: flex-end
-
+  &__features-text:first-of-type
+    
+    margin-bottom: 24px
   &__features-text2
     max-width: 50.9rem
 
@@ -212,9 +216,10 @@
   &__box
     display: flex
     justify-content: space-between
-
+    &-right-mob
+      display: none
   &__form
-    width: 56.2rem
+    max-width: 56.2rem
     padding: 3.9rem 4.5rem 4.9rem 4.5rem
     margin-right: 3rem
     @include form-border
@@ -416,6 +421,8 @@ textarea:focus::placeholder
   &__nav
 
   &-burger__button
+    display: none
+  &-burger__menu
     display: none
 
   &__text
