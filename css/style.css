@@ -1521,7 +1521,7 @@ textarea:focus::placeholder {
 }
 
 .footer-burger__menu {
-  display: none;
+  display: none !important;
 }
 
 .swiper1 {
