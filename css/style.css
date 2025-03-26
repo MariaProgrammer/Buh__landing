@@ -1506,7 +1506,11 @@ textarea:focus::placeholder {
   display: none;
 }
 
-.footer__text {
+.footer-burger__menu {
+  display: none;
+}
+
+.footer-burger__menu__text {
   font-family: "Nunito Sans 7pt";
   font-weight: 500;
   font-size: 2rem;
@@ -1514,6 +1518,10 @@ textarea:focus::placeholder {
   letter-spacing: -0.04em;
   color: #f1f1ff;
   margin-bottom: 5px;
+}
+
+.footer-burger__menu {
+  display: none;
 }
 
 .swiper1 {
