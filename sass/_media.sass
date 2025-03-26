@@ -239,7 +239,7 @@
     top: -227px
   .swiper1
     height: 65rem !important
-    
+
   .swiper__slide-text:first-of-type
     margin-bottom: 0
   .main__h3--dark-mob
@@ -348,7 +348,7 @@
     position: relative
     overflow: hidden
     &__inner
-      padding-top: 0     
+      padding-top: 0
       overflow: hidden
       padding-bottom: 70px
     &__title-h2
@@ -357,26 +357,27 @@
     &__box
       flex-direction: column
       align-items: center
-      
+
     &__box-right
       display: none
     &__box-right-mob
       display: block
       background: $color-blue-dark
-  
+
     &__form
       width: 100%
       border: none
       margin-right: 0
-  
+      padding-bottom: 0
+
   .tabs
     display: flex
     flex-direction: column
     align-items: center
-  
+
     &__inner
       padding-top: 27px
-    
+
     &__title
       margin-right: 0
       margin-bottom: 58px
@@ -398,6 +399,21 @@
       background: $color-blue-light
       border: none
       color: $color-blue-dark
+      font-family: $font-family
+      font-weight: 300
+      font-size: 19px
+      line-height: 1.08
+      letter-spacing: -0.04em
+      text-align: center
+    &__text
+      font-family: $font-family
+      font-weight: 300
+      font-size: 19px
+      line-height: 1.16
+      letter-spacing: -0.04em
+      text-align: center
+      color: #fff
+      margin-bottom: 6px
 
     &__btn-active
       background: #6A71A1
@@ -405,12 +421,16 @@
 
     &__content
       display: none
+      &-container
+        margin-bottom: 50px
 
     &__content-active
       display: block
 
-    .btn
-      &__reset
+    &__map
+      width: 312px
+      height: 312px
+      margin-bottom: 95px
 
   .footer
 
@@ -438,8 +458,6 @@
     &__box
       padding-top: 40px
       padding-bottom: 40px
-    
-    
 
 @media ( max-width: 576px )
   .container
@@ -464,24 +482,24 @@
   .price
     &__img-box
       bottom: -31px
-  .swiper1 
+  .swiper1
     height: 69rem !important
   .swiper1 .swiper-slide__container--inner1
     top: -85px
-  .swiper__slide-text:first-of-type 
+  .swiper__slide-text:first-of-type
     margin-bottom: 30px
   .swiper1 .swiper-slide__right
     margin-bottom: 0
   .about__features-wrap
     max-width: 80%
   .about__features-top
-    padding: 250px 0 50px 0 
+    padding: 250px 0 50px 0
   .about__features-text2
     font-size: 15px
     max-width: 55%
   .about__features-circle p
     font-size: 2.5rem
-  
+
   .circle-1
     width: 20rem
     height: 20rem
@@ -493,32 +511,32 @@
     height: 24rem
   .feature-card__img
     width: 44px
-  .services__features 
-        
+  .services__features
+
     background: url('../img/services__linie.svg'), url('../img/services__linie.svg'), url('../img/services__linie.svg'), url('../img/services__pic1.svg')
     background-position: 70% 21%, 70% 42%, 70% 63%, 50% 100%
     background-size: 15rem .2rem, 15rem .2rem, 15rem .2rem, 10.3rem auto
-    background-repeat: no-repeat    
-  .feature-card__descr 
+    background-repeat: no-repeat
+  .feature-card__descr
     font-size: 15px
-   
+
 @media ( max-width: 360px )
   .container
     max-width: 320px
     padding: 0 15px
   .header
     &__left-title
-      font-size: 28px 
+      font-size: 28px
   .main
     &__title-h2
-      font-size: 28px 
+      font-size: 28px
   .swiper1
     height: 69rem !important
   .slide__title-h4
     font-size: 22px
   .text-descr
     font-size: 15px
-  
+
   .main .circle-1
     width: 18rem
     height: 18rem
@@ -534,22 +552,22 @@
     left: 50%
   .about__features-wrap
     max-width: 90%
-  .about__features-text:first-of-type    
+  .about__features-text:first-of-type
     margin-bottom: 12px
   .about__features-top
-  
+
     // padding: 250px 0 50px 0
-    
-    background: url('../img/about__features-bg.svg'), #3E446D 
+
+    background: url('../img/about__features-bg.svg'), #3E446D
     background-size: contain
     background-position: center
-    background-repeat: no-repeat  
+    background-repeat: no-repeat
   .main__descr
     font-size: 19px
   .price__title
     font-size: 28px
     text-align: center
-  .price__wrap 
+  .price__wrap
     padding-bottom: 20rem
     max-width: 95%
     position: relative
@@ -560,4 +578,5 @@
   .contacts__form-text
     font-size: 19px
     margin-bottom: 38px
-  
+  .tabs__btn
+    width: 150px
