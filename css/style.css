@@ -1155,6 +1155,10 @@ input:focus:-ms-input-placeholder {
   max-width: 30.5rem;
 }
 
+.swiper2-mob {
+  display: none;
+}
+
 .price__block {
   position: relative;
 }
@@ -1796,6 +1800,127 @@ textarea:focus::placeholder {
   justify-content: space-between;
   background: #515886;
   position: relative;
+}
+
+.swiper2-mob__card {
+  overflow: hidden;
+  background: #6A71A1;
+  border-bottom: 2px solid #f1f1ff;
+}
+
+.swiper2-mob__button {
+  width: 97px;
+  height: 97px;
+  border-radius: 50%;
+  background: #3e446d;
+  position: absolute;
+  transform: translateY(-50%);
+  z-index: 20;
+}
+
+.swiper2-mob__ico {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  z-index: 25;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.swiper2-mob__ico1 {
+  left: 18px;
+}
+
+.swiper2-mob__ico2 {
+  right: 18px;
+}
+
+.swiper2-mob__ico3 {
+  left: 18px;
+}
+
+.swiper2-mob__ico4 {
+  right: 18px;
+}
+
+.mob-card1 {
+  position: relative;
+  padding: 24px 54px 0 30px;
+}
+
+.mob-card2 {
+  position: relative;
+  padding: 24px 30px 0 54px;
+}
+
+.mob-card3 {
+  position: relative;
+  padding: 24px 54px 0 30px;
+}
+
+.mob-card4 {
+  position: relative;
+  padding: 24px 30px 0 54px;
+}
+
+.mob__container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.mob-card__text {
+  padding-bottom: 65px;
+  font-family: "Nunito Sans 10pt Condensed";
+  font-weight: 300;
+  font-size: 19px;
+  line-height: 1.20;
+  letter-spacing: -0.04em;
+  color: #fff;
+}
+
+.mob-img1 {
+  width: 120px;
+  height: auto;
+  align-self: flex-end;
+}
+
+.mob-img2 {
+  width: 85px;
+  height: auto;
+  align-self: flex-end;
+}
+
+.mob-img3 {
+  width: 149px;
+  height: auto;
+  align-self: flex-end;
+}
+
+.mob-img4 {
+  width: 91px;
+  height: auto;
+  align-self: flex-end;
+}
+
+.mob-button1 {
+  left: 92%;
+  top: 50%;
+}
+
+.mob-button2 {
+  right: 92%;
+  top: 50%;
+}
+
+.mob-button3 {
+  left: 92%;
+  top: 50%;
+}
+
+.mob-button4 {
+  right: 92%;
+  top: 50%;
 }
 
 .swiper3__container {
@@ -2492,6 +2617,12 @@ textarea:focus::placeholder {
   }
   .feature-card__descr {
     font-size: 15px;
+  }
+  .swiper2 {
+    display: none;
+  }
+  .swiper2-mob {
+    display: block;
   }
 }
 
