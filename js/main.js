@@ -389,7 +389,45 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   
   })
-  
+
+//slider2 mob
+const mobCard1Cover = document.querySelector('.mob-card1__cover')
+const mobCard2Cover = document.querySelector('.mob-card2__cover')
+const mobCard3Cover = document.querySelector('.mob-card3__cover')
+const mobCard4Cover = document.querySelector('.mob-card4__cover')
+
+const mobButton1 = document.querySelector('.mob-button1')
+const mobButton2 = document.querySelector('.mob-button2')
+const mobButton3 = document.querySelector('.mob-button3')
+const mobButton4 = document.querySelector('.mob-button4')
+
+mobButton1.addEventListener('click', ()=> {
+  mobCard1Cover.classList.add('active')
+})
+mobCard1Cover.addEventListener('click', ()=> {
+  mobCard1Cover.classList.remove('active')
+})
+
+mobButton2.addEventListener('click', ()=> {
+  mobCard2Cover.classList.add('active')
+})
+mobCard2Cover.addEventListener('click', ()=> {
+  mobCard2Cover.classList.remove('active')
+})
+mobButton3.addEventListener('click', ()=> {
+  mobCard3Cover.classList.add('active')
+})
+mobCard3Cover.addEventListener('click', ()=> {
+  mobCard3Cover.classList.remove('active')
+})
+mobButton4.addEventListener('click', ()=> {
+  mobCard4Cover.classList.add('active')
+})
+mobCard4Cover.addEventListener('click', ()=> {
+  mobCard4Cover.classList.remove('active')
+})
+
+
 
 
 
