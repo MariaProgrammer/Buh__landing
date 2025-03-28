@@ -967,7 +967,7 @@ input:focus:-ms-input-placeholder {
 .header {
   width: 100%;
   height: 99.3rem;
-  background: url("../img/header__pic.svg"), url("../img/header__bg.svg");
+  background: url("../img/header__pic.svg"), url("../img/header__bg.png");
   background-position: 115% 60%, center;
   background-size: 60% auto, cover;
   background-repeat: no-repeat;
@@ -2168,6 +2168,39 @@ textarea:focus::placeholder {
 
 .swiper3 .swiper-button-prev3.swiper-button-disabled, .swiper3 .swiper-button-next3.swiper-button-disabled {
   opacity: 0 !important;
+}
+
+@media (max-width: 2500px) {
+  .container {
+    max-width: 1660px;
+    padding: 0 30px;
+  }
+  .header {
+    width: 100%;
+    height: 130rem;
+    background: url("../img/header__pic.svg"), url("../img/header__bg.svg");
+    background-position: 115% 60%, center;
+    background-size: 60% auto, cover;
+    background-repeat: no-repeat;
+    padding-top: 3.8rem;
+  }
+}
+
+@media (max-width: 1600px) {
+  .header {
+    width: 100%;
+    height: 99.3rem;
+    background: url("../img/header__pic.svg"), url("../img/header__bg.png");
+    background-position: 115% 60%, center;
+    background-size: 60% auto, cover;
+    background-repeat: no-repeat;
+    padding-top: 3.8rem;
+  }
+  .container {
+    max-width: 1248px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
 }
 
 @media (max-width: 1300px) {
