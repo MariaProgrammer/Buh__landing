@@ -2184,6 +2184,9 @@ textarea:focus::placeholder {
     background-repeat: no-repeat;
     padding-top: 3.8rem;
   }
+  .about__features-wrap2 {
+    padding-top: 42rem;
+  }
 }
 
 @media (max-width: 1600px) {
@@ -2200,6 +2203,9 @@ textarea:focus::placeholder {
     max-width: 1248px;
     margin: 0 auto;
     padding: 0 15px;
+  }
+  .about__features-wrap2 {
+    padding-top: 20rem;
   }
 }
 
@@ -2485,6 +2491,9 @@ textarea:focus::placeholder {
     max-width: 70%;
     position: relative;
     top: -227px;
+  }
+  .about__features-bottom {
+    padding-bottom: 25.5rem;
   }
   .swiper1 {
     height: 65rem !important;
