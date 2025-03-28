@@ -277,10 +277,10 @@ document.addEventListener('scroll', function () {
 //подключение слайдера-3
 const swiper3 = new Swiper('.swiper3', {
 	direction: 'horizontal',
-	loop: false,
+	loop: true,
 	slidesPerView: 3,
   slidesPerGroup: 2,
-	spaceBetween: 140,
+	// spaceBetween: 140,
   // centeredSlides: true,
   // centerInsufficientSlides: true,	
   // createElements: true,
