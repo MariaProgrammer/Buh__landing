@@ -1064,7 +1064,7 @@ input:focus:-ms-input-placeholder {
 }
 
 .about__features-img2 {
-  width: 100vw;
+  width: 100%;
   height: auto;
 }
 
