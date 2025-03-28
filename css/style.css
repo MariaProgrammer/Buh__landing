@@ -1353,15 +1353,15 @@ input:focus:-ms-input-placeholder {
 .validity-icon::before {
   position: absolute;
   right: 30px;
-  top: 0;
+  top: -7px;
 }
 
-input:invalid:required.touched + .validity-icon::before {
+.contacts__input:invalid:required.touched + .validity-icon::before {
   content: '✖';
   color: #fa5454;
 }
 
-input:invalid:required.touched {
+.contacts__input:invalid:required.touched {
   border: 4px solid #fa5454;
 }
 
@@ -1372,19 +1372,27 @@ input:valid.touched + .validity-icon::before {
   background: url("../icons/galka.svg");
 }
 
-[type="checkbox"]:invalid {
-  outline: 2px solid red;
-  outline-offset: 2px;
-}
-
 input:focus {
   outline: none;
-  border: 4px solid #484F80;
+  border: 2px solid #484F80;
+  background: transparent;
+  font-family: "Nunito Sans 10pt Condensed";
+  font-weight: 200;
+  font-size: 2.2rem;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: #444a75;
 }
 
 textarea:focus {
   outline: none;
-  border: 4px solid #484F80;
+  border: 2px solid #484F80;
+  font-family: "Nunito Sans 10pt Condensed";
+  font-weight: 200;
+  font-size: 2.2rem;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: #444a75;
 }
 
 ::placeholder {
