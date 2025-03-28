@@ -13,6 +13,10 @@
     height: 8.7rem
     justify-content: space-between
     margin-bottom: 11.8rem
+    &-list
+      padding: 15px 39px
+      border-radius: 19px
+      background: #fff
   &__pic-mobile
     display: none
   &__left
@@ -392,25 +396,37 @@ textarea:focus::placeholder
   cursor: pointer
 .footer
   &__partners
-    display: flex
-    align-items: center
-    gap: 1.5rem
-    &-link
-      display: inline-block
+    display: none
 
   &__inner
+    @include flex-center
+    justify-content: space-between
     width: 100%
     min-height: 223px
     background: url('../img/footer__bg.svg') center / cover no-repeat
+  &__contacts
+    display: flex
+    flex-direction: column
+    gap: 5px
+    p
+      font-family: $second-family
+      font-weight: 500
+      font-size: 2rem
+      line-height: 1.27
+      letter-spacing: -0.04em
+      color: #f1f1ff
+
+
 
   &__box
     @include flex-center
     justify-content: space-between
-    padding-top: 8.5rem
+    padding-top: 4.5rem
   &__logo
-
+    display: block
     width: 9.1rem
     height: auto
+    
 
   &__logo-img
     display: block
@@ -419,6 +435,7 @@ textarea:focus::placeholder
     object-fit: cover
 
   &__nav
+    display: block
 
   &-burger__button
     display: none
@@ -433,3 +450,4 @@ textarea:focus::placeholder
     margin-bottom: 5px
 .footer-burger__menu
   display: none !important
+
