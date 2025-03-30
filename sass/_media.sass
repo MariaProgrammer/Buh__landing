@@ -231,28 +231,30 @@
           width: 100%
           height: 90px
           position: absolute
-          top: -43px
+          top: -20%
           left: 0
           right: 0
-        &--inner2
-          background: rgba(241, 241 , 255 , .3)
-          width: 100%
-          height: 90px
-          position: absolute
-          top: -30px
-          left: 0
-          right: 0
-        &--inner3
-          background: rgba(241, 241 , 255 , .3)
-          width: 100%
-          height: 90px
-          position: absolute
-          top: -70px
-          left: 0
-          right: 0
+         
+        
+    &__wrap
+      width: 100%
+      height: 100%
+      display: flex
+      align-items: center
+      justify-content: flex-end
 
   .slide__title-h4
+    display: none
+  .slide__title-h4--mob
+    display: block
     max-width: 65%
+    font-family: $font-family
+    font-weight: 600
+    font-size: 19px
+    line-height: 1.08
+    letter-spacing: -0.04em
+    text-align: right
+    color: #fff
   .text-circle
     position: relative
     padding-left: 30px
@@ -267,6 +269,7 @@
       background: #fff
   & .swiper-button-prev1.swiper-button-disabled, .swiper-button-next1.swiper-button-disabled
     opacity: .5 !important
+  
   .about__features
     background: transparent
     padding-top: 0
@@ -286,6 +289,8 @@
 
   .swiper__slide-text:first-of-type
     margin-bottom: 0
+  .mb15
+    margin-bottom: 15px !important
   .main__h3--dark-mob
     color: $color-blue-light
   .about__features-text
@@ -539,8 +544,12 @@
   //   top: -85px
   .swiper__slide-text:first-of-type
     margin-bottom: 30px
-  .swiper1 .swiper-slide__right
-    margin-bottom: 0
+  .swiper1
+    & .swiper-slide__right
+      margin-bottom: 0
+    & .swiper-slide
+      &__container--inner1
+        top: -29%
   .about__features-wrap
     max-width: 80%
   .about__features-top
@@ -587,6 +596,11 @@
       font-size: 28px
   .swiper1
     height: 69rem !important
+    & .swiper-slide
+      &__container--inner1
+        top: -20%
+      &__container--inner3
+        top: -39%
   .slide__title-h4
     font-size: 22px
   .text-descr

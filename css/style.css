@@ -1701,10 +1701,19 @@ textarea:focus::placeholder {
   font-weight: 100;
 }
 
+.swiper__slide-text:last-child {
+  margin-bottom: 0;
+}
+
 .swiper1__img {
   display: block;
   width: 14.2rem;
   margin-bottom: 3.4rem;
+  align-self: flex-end;
+}
+
+.slide__title-h4--mob {
+  display: none;
 }
 
 .swiper2 {
@@ -2483,30 +2492,30 @@ textarea:focus::placeholder {
     width: 100%;
     height: 90px;
     position: absolute;
-    top: -43px;
+    top: -20%;
     left: 0;
     right: 0;
   }
-  .swiper1 .swiper-slide__container--inner2 {
-    background: rgba(241, 241, 255, 0.3);
+  .swiper1__wrap {
     width: 100%;
-    height: 90px;
-    position: absolute;
-    top: -30px;
-    left: 0;
-    right: 0;
-  }
-  .swiper1 .swiper-slide__container--inner3 {
-    background: rgba(241, 241, 255, 0.3);
-    width: 100%;
-    height: 90px;
-    position: absolute;
-    top: -70px;
-    left: 0;
-    right: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
   }
   .slide__title-h4 {
+    display: none;
+  }
+  .slide__title-h4--mob {
+    display: block;
     max-width: 65%;
+    font-family: "Nunito Sans 10pt Condensed";
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 1.08;
+    letter-spacing: -0.04em;
+    text-align: right;
+    color: #fff;
   }
   .text-circle {
     position: relative;
@@ -2546,6 +2555,9 @@ textarea:focus::placeholder {
   }
   .swiper__slide-text:first-of-type {
     margin-bottom: 0;
+  }
+  .mb15 {
+    margin-bottom: 15px !important;
   }
   .main__h3--dark-mob {
     color: #f1f1ff;
@@ -2823,6 +2835,9 @@ textarea:focus::placeholder {
   .swiper1 .swiper-slide__right {
     margin-bottom: 0;
   }
+  .swiper1 .swiper-slide__container--inner1 {
+    top: -29%;
+  }
   .about__features-wrap {
     max-width: 80%;
   }
@@ -2881,6 +2896,12 @@ textarea:focus::placeholder {
   }
   .swiper1 {
     height: 69rem !important;
+  }
+  .swiper1 .swiper-slide__container--inner1 {
+    top: -20%;
+  }
+  .swiper1 .swiper-slide__container--inner3 {
+    top: -39%;
   }
   .slide__title-h4 {
     font-size: 22px;
