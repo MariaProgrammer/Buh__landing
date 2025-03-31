@@ -1020,6 +1020,10 @@ input:focus:-ms-input-placeholder {
   margin-bottom: 0;
 }
 
+.header__left-descr--mob {
+  display: none;
+}
+
 .header__left-btn {
   width: 48.8rem;
   height: 5.3rem;
@@ -1205,6 +1209,7 @@ input:focus:-ms-input-placeholder {
   padding-top: 8.4rem;
   padding-bottom: 8.4rem;
   position: relative;
+  z-index: 10;
 }
 
 .price__text {
@@ -2419,6 +2424,19 @@ textarea:focus::placeholder {
     width: 100%;
     text-align: center;
   }
+  .header__left-descr {
+    display: none;
+  }
+  .header__left-descr--mob {
+    display: block;
+    font-family: .header__left-descr--mob font-family;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.27;
+    letter-spacing: -0.04em;
+    text-align: center;
+    color: #444a75;
+  }
   .header__left-wrap {
     margin-bottom: 20px;
   }
@@ -2612,13 +2630,12 @@ textarea:focus::placeholder {
     padding-top: 0;
   }
   .about__features-top {
-    padding: 250px 0;
-    background: url("../img/about__features-bg.svg") center/cover no-repeat;
+    padding: 50px 0 459px;
+    background: url(../img/about__features-bg.svg) center bottom/cover no-repeat;
   }
   .about__features-wrap {
     max-width: 70%;
     position: relative;
-    top: -227px;
   }
   .about__features-bottom {
     padding-bottom: 25.5rem;
@@ -2922,26 +2939,18 @@ textarea:focus::placeholder {
     max-width: 80%;
   }
   .about__features-top {
-    padding: 250px 0 50px 0;
+    padding: 50px 0 459px;
+    background: url(../img/about__features-bg.svg) 100% bottom/cover no-repeat;
   }
   .about__features-text2 {
     font-size: 15px;
     max-width: 55%;
   }
-  .about__features-circle p {
-    font-size: 2.5rem;
+  .about__features-circle {
+    display: none;
   }
-  .circle-1 {
-    width: 20rem;
-    height: 20rem;
-  }
-  .circle-2 {
-    width: 20rem;
-    height: 20rem;
-  }
-  .circle-3 {
-    width: 24rem;
-    height: 24rem;
+  .about__features-bottom {
+    padding-bottom: 56px;
   }
   .feature-card__img {
     width: 44px;
@@ -3012,9 +3021,10 @@ textarea:focus::placeholder {
     margin-bottom: 12px;
   }
   .about__features-top {
-    background: url("../img/about__features-bg.svg"), #3E446D;
-    background-size: contain;
-    background-position: center;
+    padding: 50px 0 200px;
+    background: url("../img/about__features-bg.svg");
+    background-size: cover;
+    background-position: 90% bottom;
     background-repeat: no-repeat;
   }
   .main__descr {
