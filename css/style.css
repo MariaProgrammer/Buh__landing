@@ -3054,6 +3054,9 @@ textarea:focus::placeholder {
   .burger__menu-list {
     padding: 120px 30px 51px;
   }
+  .header__left-linie {
+    display: none;
+  }
 }
 
 @media (max-width: 360px) {
