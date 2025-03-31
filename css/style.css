@@ -3067,7 +3067,7 @@ textarea:focus::placeholder {
   .header {
     position: fixed;
     top: 85px;
-    width: 100%;
+    width: 100vw;
     z-index: 50;
     height: 90vh;
     background: #f1f1ff;
