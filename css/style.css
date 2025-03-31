@@ -828,6 +828,7 @@ body {
 .main__title {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .main__title-h2 {
@@ -2953,12 +2954,12 @@ textarea:focus::placeholder {
     padding-bottom: 56px;
   }
   .feature-card__img {
-    width: 44px;
+    width: 55px;
   }
   .services__features {
     background: url("../img/services__linie.svg"), url("../img/services__linie.svg"), url("../img/services__linie.svg"), url("../img/services__pic1.svg");
-    background-position: 70% 21%, 70% 42%, 70% 63%, 50% 100%;
-    background-size: 15rem .2rem, 15rem .2rem, 15rem .2rem, 10.3rem auto;
+    background-position: 73% 21%, 73% 42%, 73% 63%, 50% 100%;
+    background-size: 4rem .2rem, 4rem .2rem, 4rem .2rem, 10.3rem auto;
     background-repeat: no-repeat;
   }
   .feature-card__descr {
@@ -2970,6 +2971,15 @@ textarea:focus::placeholder {
   .swiper2-mob {
     display: block;
   }
+  .main .card-1 {
+    max-width: 187px;
+  }
+  .main .card-2 {
+    max-width: 187px;
+  }
+  .main .card-3 {
+    max-width: 187px;
+  }
 }
 
 @media (max-width: 360px) {
@@ -2980,8 +2990,20 @@ textarea:focus::placeholder {
   .header__left-title {
     font-size: 28px;
   }
-  .main__title-h2 {
+  .review__title {
     font-size: 28px;
+    margin-right: 0;
+    gap: 21px;
+  }
+  .review__title-h2 {
+    margin-right: 0;
+    color: white;
+  }
+  .review .main__linie {
+    margin-right: 0;
+  }
+  .review .main__descr {
+    max-width: 112px;
   }
   .swiper1 {
     height: 69rem !important;

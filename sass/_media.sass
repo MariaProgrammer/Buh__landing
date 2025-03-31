@@ -655,20 +655,25 @@
   .about__features-bottom
     padding-bottom: 56px
   .feature-card__img
-    width: 44px
+    width: 55px
   .services__features
-
     background: url('../img/services__linie.svg'), url('../img/services__linie.svg'), url('../img/services__linie.svg'), url('../img/services__pic1.svg')
-    background-position: 70% 21%, 70% 42%, 70% 63%, 50% 100%
-    background-size: 15rem .2rem, 15rem .2rem, 15rem .2rem, 10.3rem auto
+    background-position: 73% 21%, 73% 42%, 73% 63%, 50% 100%
+    background-size: 4rem .2rem, 4rem .2rem, 4rem .2rem, 10.3rem auto
     background-repeat: no-repeat
   .feature-card__descr
     font-size: 15px
+    
   .swiper2
     display: none
   .swiper2-mob
     display: block
-
+  .main .card-1
+    max-width: 187px
+  .main .card-2
+    max-width: 187px
+  .main .card-3
+    max-width: 187px
 @media ( max-width: 360px )
   .container
     max-width: 320px
@@ -676,9 +681,18 @@
   .header
     &__left-title
       font-size: 28px
-  .main
-    &__title-h2
+  .review
+    &__title
       font-size: 28px
+      margin-right: 0
+      gap: 21px
+      &-h2
+        margin-right: 0
+        color: white
+    & .main__linie
+      margin-right: 0
+    & .main__descr
+      max-width: 112px
   .swiper1
     height: 69rem !important
     & .swiper-slide
