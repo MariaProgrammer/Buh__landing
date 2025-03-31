@@ -445,28 +445,36 @@ const mobButton4 = document.querySelector('.mob-button4')
 
 mobButton1.addEventListener('click', ()=> {
   mobCard1Cover.classList.add('active')
+  mobButton1.classList.add('active')
 })
 mobCard1Cover.addEventListener('click', ()=> {
   mobCard1Cover.classList.remove('active')
+  mobButton1.classList.remove('active')
 })
 
 mobButton2.addEventListener('click', ()=> {
   mobCard2Cover.classList.add('active')
+  mobButton2.classList.add('active')
 })
 mobCard2Cover.addEventListener('click', ()=> {
   mobCard2Cover.classList.remove('active')
+  mobButton2.classList.remove('active')
 })
 mobButton3.addEventListener('click', ()=> {
   mobCard3Cover.classList.add('active')
+  mobButton3.classList.add('active')
 })
 mobCard3Cover.addEventListener('click', ()=> {
   mobCard3Cover.classList.remove('active')
+  mobButton3.classList.remove('active')
 })
 mobButton4.addEventListener('click', ()=> {
   mobCard4Cover.classList.add('active')
+  mobButton4.classList.add('active')
 })
 mobCard4Cover.addEventListener('click', ()=> {
   mobCard4Cover.classList.remove('active')
+  mobButton4.classList.remove('active')
 })
 
 //всплытие окна по ховеру на слайде

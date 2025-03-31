@@ -79,7 +79,7 @@
     padding-left: 36px
     border: none
     z-index: 30
-    transform: translateX(500px)
+    transform: translateX(-500px)
     transition: transform 1s ease-out
     & img
       width: 10px
@@ -142,7 +142,7 @@
     padding-left: 36px
     border: none
     z-index: 30
-    transform: translateX(500px)
+    transform: translateX(-500px)
     transition: transform 1s ease-out
     & img
       width: 10px
@@ -206,12 +206,25 @@
 .mob-button1  
   left: 90%
   top: 50%
+  transition: left 1s ease-out
 .mob-button2  
   right: 90%
   top: 50%
+  transition: right 1s ease-out
 .mob-button3  
   left: 90%
   top: 50%
+  transition: left 1s ease-out
 .mob-button4 
   right: 90%
   top: 50%
+  transition: right 1s ease-out
+
+.mob-button1.active
+  left: -5%
+.mob-button2.active
+  right: -5%
+.mob-button3.active
+  left: -5%
+.mob-button4.active
+  right: -5%

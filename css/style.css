@@ -1952,7 +1952,7 @@ textarea:focus::placeholder {
   padding-left: 36px;
   border: none;
   z-index: 30;
-  transform: translateX(500px);
+  transform: translateX(-500px);
   transition: transform 1s ease-out;
 }
 
@@ -2030,7 +2030,7 @@ textarea:focus::placeholder {
   padding-left: 36px;
   border: none;
   z-index: 30;
-  transform: translateX(500px);
+  transform: translateX(-500px);
   transition: transform 1s ease-out;
 }
 
@@ -2109,21 +2109,41 @@ textarea:focus::placeholder {
 .mob-button1 {
   left: 90%;
   top: 50%;
+  transition: left 1s ease-out;
 }
 
 .mob-button2 {
   right: 90%;
   top: 50%;
+  transition: right 1s ease-out;
 }
 
 .mob-button3 {
   left: 90%;
   top: 50%;
+  transition: left 1s ease-out;
 }
 
 .mob-button4 {
   right: 90%;
   top: 50%;
+  transition: right 1s ease-out;
+}
+
+.mob-button1.active {
+  left: -5%;
+}
+
+.mob-button2.active {
+  right: -5%;
+}
+
+.mob-button3.active {
+  left: -5%;
+}
+
+.mob-button4.active {
+  right: -5%;
 }
 
 .swiper3__container {
@@ -3036,6 +3056,13 @@ textarea:focus::placeholder {
     height: 20rem;
     left: 50%;
   }
+  .about__title .services__title-h2 {
+    margin-right: 32px;
+  }
+  .about__title .main__linie {
+    height: 62px;
+    margin-right: 32px;
+  }
   .about__features-wrap {
     max-width: 90%;
   }
@@ -3051,6 +3078,9 @@ textarea:focus::placeholder {
   }
   .main__descr {
     font-size: 19px;
+  }
+  .main__linie {
+    height: 62px;
   }
   .price__title {
     font-size: 28px;
