@@ -128,13 +128,36 @@
     font-size: 45%
   body
     background: $color-blue-light
+    
   .nav__logo
     width: 35%
+  .nav--mob
+    position: fixed
+    left: 0
+    top: 0
+    right: 0
+    width: 100%
+    height: 29rem
+    z-index: 100
+    
+    display: flex
+    align-items: flex-start
+    justify-content: center
+    background: url('../img/header__bg-mob.png') center / cover no-repeat
+    
+    &-container
+      @include flex-center
+      justify-content: space-between
+      padding-top: 30px
+      
+  .nav--desctop
+    display: none
+  
   .header
     width: 100%
     height: 100%
     background: none
-    padding-top: 3.8rem
+    padding-top: 0
     &__cont
       position: relative
     &__nav
@@ -213,7 +236,7 @@
         align-items: center
         justify-content: center
         gap: 22px
-        padding: 51px 80px 51px
+        padding: 170px 80px 51px
 
       &-link
         text-decoration: none
@@ -332,7 +355,7 @@
     opacity: .5 !important
   
   .about__features
-    background: transparent
+    background: $color-blue-light
     padding-top: 0
 
   .about__features-top
@@ -426,7 +449,7 @@
       background: #414772
     &__img-bottom-mob
       display: block
-      width: 100vw
+      width: 100%
       object-fit: cover
       position: relative
       top: -10px
@@ -590,20 +613,25 @@
     &__box
       padding-top: 40px
       padding-bottom: 40px
+    &__contacts
+      display: none
 
 @media ( max-width: 576px )
   .container
     padding: 0 15px
+  .nav--mob-container
+    padding-top: 25px
   .header
     &__nav
       margin-bottom: 30px
+    
     &__left-title
       font-size: 4.4rem
-  .nav
-    &__logo
-      width: 50%
+  .nav--mob
+    height: 20rem
   .burger
     &__menu-list
+  
   .main
     &__title-h2
       font-size: 32px
@@ -674,13 +702,47 @@
     max-width: 187px
   .main .card-3
     max-width: 187px
+  .burger__menu-list
+    padding: 120px 30px 51px
+   
 @media ( max-width: 360px )
   .container
     max-width: 320px
     padding: 0 15px
+  .nav--mob-container
+    padding-top: 15px
   .header
+    position: fixed
+    top: 85px
+    width: 100%
+    z-index: 50
+    height: 100vh
+    background: $color-blue-light
+
     &__left-title
       font-size: 28px
+  // .nav--mob
+  //   width: 100%
+  //   height: 129px
+
+      
+  //   display: block
+  //   background: url('../img/header__bg360.svg'), $color-blue-light
+  //   background-position: center
+  //   background-size: contain 
+  //   background-repeat: no-repeat
+  .header__pic-mobile
+    margin-bottom: 10px
+  .header__left-linie
+    display: none
+  .nav--mob 
+        height: 16rem
+  .burger__menu-list
+    padding: 0px 30px 51px
+  .main
+    padding-top: 100vh
+    position: relative
+    z-index: 80  
   .review
     &__title
       font-size: 28px
@@ -689,6 +751,8 @@
       &-h2
         margin-right: 0
         color: white
+    &__box-bottom
+      background: $color-blue-light
     & .main__linie
       margin-right: 0
     & .main__descr
@@ -765,4 +829,7 @@
     padding-left: 18px
   // .swiper3 .swiper-slide__link img
   //   left: 5%
+  .footer
+    position: relative
+    z-index: 80
   

@@ -377,7 +377,7 @@ const swiper3 = new Swiper('.swiper3', {
   const input = document.querySelector('.contacts__input')
   console.log(input);
   
-  btn1.addEventListener('click', function() {
+  btn1.addEventListener('submit', function() {
     btn1.textContent = 'Заявка оставлена'
     btn1.classList.remove('btn--dark')
     btn1.classList.remove('btn')
