@@ -3076,6 +3076,7 @@ textarea:focus::placeholder {
     font-size: 28px;
   }
   .header__pic-mobile {
+    padding-top: 0;
     margin-bottom: 10px;
   }
   .header__left-linie {
