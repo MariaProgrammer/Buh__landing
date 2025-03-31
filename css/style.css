@@ -1359,7 +1359,7 @@ input:focus:-ms-input-placeholder {
 .validity-icon::before {
   position: absolute;
   right: 30px;
-  top: -7px;
+  top: 2px;
 }
 
 .contacts__input:invalid:required.touched + .validity-icon::before {
@@ -2730,7 +2730,7 @@ textarea:focus::placeholder {
   }
   .review__img-bottom-mob {
     display: block;
-    width: 100%;
+    width: 100vw;
     object-fit: cover;
     position: relative;
     top: -10px;
