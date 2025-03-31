@@ -277,49 +277,91 @@ document.addEventListener('scroll', function () {
 //подключение слайдера-3
 const swiper3 = new Swiper('.swiper3', {
 	direction: 'horizontal',
-	loop: true,
-	slidesPerView: 3,
-  slidesPerGroup: 2,
-	// spaceBetween: 140,
-  // centeredSlides: true,
-  // centerInsufficientSlides: true,	
+	loop: false,
+	slidesPerView: 140,
+  slidesPerGroup: 1,
+	spaceBetween: 'auto',
+  // freemode: true,
+  	
   // createElements: true,
-  // cssMode: true,
+  cssMode: true,
   allowTouchMove: true,
-  grabCursor: true,  
+  grabCursor: true,
+  centeredSlides: true,
+  centerInsufficientSlides: true,
+
+  // slidesOffsetBefore: 170,
+	// slidesOffsetAfter: 170,
+	// watchSlidesVisibility: false,
+	// watchSlidesProgress: false,
+	// simulateTouch: false,  
 	navigation: {
 		nextEl: '.swiper-button-next3',
-		prevEl: '.swiper-button-prev3',
+		prevEl: '.swiper-button-prev3'
 	},
   autoplay: {
     delay: 3000,
-    disableOnInteraction: false,        
+    disableOnInteraction: false        
   },
 	breakpoints: {
-    // when window width is >= 320px
+    // when window width is >= 300px
 		300: {
       slidesPerView: 1,
       spaceBetween: 12
+      
     },
-		350: {
+    340: {
       slidesPerView: 2,
       spaceBetween: 16,
-      slidesPerGroup: 1
+      slidesPerGroup: 1,
+      centeredSlides: false,
+      centerInsufficientSlides: true
+    },
+      
+    
+		360: {
+      slidesPerView: 2,
+      spaceBetween: 16,
+      slidesPerGroup: 1,
+      centeredSlides: true,
+      centerInsufficientSlides: true
+    },
+    400: {
+      slidesPerView: 2,
+      spaceBetween: 32,
+      slidesPerGroup: 1,
+      centeredSlides: false,
+  centerInsufficientSlides: false
     },
    
     // when window width is >= 480px
     767: {
       slidesPerView: 3,
-      spaceBetween: 80
+      spaceBetween: 60,
+      centeredSlides: true,
+  centerInsufficientSlides: true
     },
     // when window width is >= 640px
     958: {
       slidesPerView: 3,
       spaceBetween: 100
     },
-		1279: {
-      slidesPerView: 3,
-      spaceBetween: 140
+		1600: {
+      slidesPerView: 4,
+      spaceBetween: 140,
+      centeredSlides: true,
+  centerInsufficientSlides: true
+    }
+  },
+  on: {
+    init() {
+      this.el.addEventListener('mouseenter', () => {
+        this.autoplay.stop();
+      });
+
+      this.el.addEventListener('mouseleave', () => {
+        this.autoplay.start();
+      });
     }
   },
 	// pagination:	{
@@ -426,6 +468,25 @@ mobButton4.addEventListener('click', ()=> {
 mobCard4Cover.addEventListener('click', ()=> {
   mobCard4Cover.classList.remove('active')
 })
+
+//всплытие окна по ховеру на слайде
+const slideLinks = Array.from(document.querySelectorAll('.swiper-slide__link'))
+
+slideLinks.forEach(el => {
+  el.addEventListener('mouseover', (e) => {
+    let parent = e.currentTarget.parentNode
+    parent.children[1].classList.add('active')
+    
+  })
+})
+slideLinks.forEach(el => {
+  el.addEventListener('mouseleave', (e) => {
+    let parent = e.currentTarget.parentNode
+    parent.children[1].classList.remove('active')
+    
+  })
+})
+
 
 
 

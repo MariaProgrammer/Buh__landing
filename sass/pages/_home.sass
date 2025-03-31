@@ -10,7 +10,7 @@
 
   &__nav
     @include flex-center
-    height: 8.7rem
+    height: 100%
     justify-content: space-between
     margin-bottom: 11.8rem
     &-list
@@ -110,13 +110,13 @@
 
 .services
   &__features
-    @include flex-center
+    display: flex
+    align-items: stretch
     justify-content: space-between
-
     padding-bottom: 18rem
     padding-top: 9.3rem
     background: url('../img/services__linie.svg'),url('../img/services__linie.svg'), url("../img/services__pic1.svg"), url('../img/services__pic2.svg')
-    background-position: 25% 28%, 71% 28%, 0 100%, 100% 100%
+    background-position: 25% 24%, 71% 24%, 0 100%, 100% 100%
     background-size: 18.3rem .4rem,18.3rem .4rem, 10.3rem auto, 38.1rem auto
     background-repeat: no-repeat
 
@@ -205,6 +205,10 @@
 .review
   &__img-bottom-mob
     display: none
+
+   
+      
+
 .contacts
   &__inner
     padding: 11rem 0

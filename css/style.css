@@ -409,6 +409,7 @@ body {
   max-width: 1248px;
   margin: 0 auto;
   padding: 0 15px;
+  overflow: hidden;
 }
 
 @font-face {
@@ -981,7 +982,7 @@ input:focus:-ms-input-placeholder {
 .header__nav {
   display: flex;
   align-items: center;
-  height: 8.7rem;
+  height: 100%;
   justify-content: space-between;
   margin-bottom: 11.8rem;
 }
@@ -1122,12 +1123,12 @@ input:focus:-ms-input-placeholder {
 
 .services__features {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
   padding-bottom: 18rem;
   padding-top: 9.3rem;
   background: url("../img/services__linie.svg"), url("../img/services__linie.svg"), url("../img/services__pic1.svg"), url("../img/services__pic2.svg");
-  background-position: 25% 28%, 71% 28%, 0 100%, 100% 100%;
+  background-position: 25% 24%, 71% 24%, 0 100%, 100% 100%;
   background-size: 18.3rem .4rem,18.3rem .4rem, 10.3rem auto, 38.1rem auto;
   background-repeat: no-repeat;
 }
@@ -2124,33 +2125,36 @@ textarea:focus::placeholder {
   background-position: center;
   background-size: 90% auto;
   background-repeat: no-repeat;
+  padding-top: 55px;
+  padding-bottom: 55px;
 }
 
 .swiper3 {
-  height: 50.6rem !important;
+  height: auto !important;
   width: calc(100vw-30px) !important;
   position: relative;
   overflow: hidden;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
-.swiper3 .swiper__wrapper {
-  width: 107.1rem !important;
-  height: 397rem !important;
+.swiper3 .swiper__wrapper .slide {
+  width: 100%;
+  height: auto !important;
   -webkit-transition-timing-function: linear !important;
   transition-timing-function: linear !important;
+  overflow: hidden;
 }
 
-.swiper3 .swiper-slide {
-  width: 28.1rem !important;
-  height: 39.7rem !important;
-  margin: auto 0;
+.swiper3 .swiper-slide__link {
+  width: 100%;
+  height: auto;
 }
 
 .swiper3 .swiper-slide img {
   display: block;
   width: 100%;
-  max-width: 100%;
-  height: 100%;
+  height: auto;
   text-align: center;
 }
 
@@ -2166,8 +2170,8 @@ textarea:focus::placeholder {
 .swiper3 .swiper-button-prev3 img, .swiper3 .swiper-button-next3 img {
   position: absolute;
   left: 50%;
-  height: 50%;
-  transform: translate(-50%, 50%);
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .swiper3 .swiper-button-prev3.swiper-button-disabled, .swiper3 .swiper-button-next3.swiper-button-disabled {
@@ -2214,6 +2218,50 @@ textarea:focus::placeholder {
   opacity: 0 !important;
 }
 
+.swiper3 .slide__cover {
+  position: relative;
+}
+
+.swiper3 .img__cover {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 105px;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform .5s ease-out, opacity .5s ease-out;
+}
+
+.swiper3 .img__cover--inner {
+  display: flex;
+}
+
+.swiper3 .img__cover--inner img {
+  display: inline-block;
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-right: 5px;
+}
+
+.swiper3 .img__cover--inner span {
+  font-family: "Nunito Sans 10pt Condensed";
+  font-weight: 300;
+  font-size: 3.2rem;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  color: #f1f1ff;
+}
+
+.swiper3 .img__cover.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 @media (max-width: 2500px) {
   .container {
     max-width: 1660px;
@@ -2255,6 +2303,10 @@ textarea:focus::placeholder {
   }
   .about__features-wrap2 {
     padding-top: 20rem;
+  }
+  .swiper3 {
+    padding-right: 140px;
+    padding-left: 140px;
   }
   .footer__inner {
     min-height: 223px;
@@ -2304,8 +2356,29 @@ textarea:focus::placeholder {
   .feature-card__descr {
     font-size: 2.8rem;
   }
+  .services__features {
+    background: url("../img/services__linie.svg"), url("../img/services__linie.svg"), url("../img/services__pic1.svg"), url("../img/services__pic2.svg");
+    background-position: 25% 28%, 71% 28%, 0 100%, 100% 100%;
+    background-size: 18.3rem .4rem,18.3rem .4rem, 10.3rem auto, 38.1rem auto;
+    background-repeat: no-repeat;
+  }
   .footer__logo {
     width: 8rem;
+  }
+  .swiper3 {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+  .swiper3 .swiper-button-prev3, .swiper3 .swiper-button-next3 {
+    position: relative;
+  }
+  .swiper3 .swiper-button-prev3 img, .swiper3 .swiper-button-next3 img {
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -2649,13 +2722,18 @@ textarea:focus::placeholder {
     background: #414772;
   }
   .swiper3 {
+    height: 70vh;
     padding-bottom: 70px;
+    z-index: 40;
   }
   .swiper3 .swiper__container {
     top: 95% !important;
+    z-index: 10;
   }
   .swiper3 .swiper__buttons {
     justify-content: center;
+    position: relative;
+    z-index: 15;
   }
   .swiper3 .swiper-button-prev3 {
     width: 6.4rem;
@@ -2664,6 +2742,7 @@ textarea:focus::placeholder {
     border: none;
     background: none;
     margin-right: 10px;
+    z-index: 20;
   }
   .swiper3 .swiper-button-next3 {
     width: 6.4rem;
@@ -2671,6 +2750,7 @@ textarea:focus::placeholder {
     border-radius: 50%;
     border: none;
     background: none;
+    z-index: 20;
   }
   .contacts {
     position: relative;
@@ -2964,5 +3044,9 @@ textarea:focus::placeholder {
   }
   .tabs__btn {
     width: 150px;
+  }
+  .swiper3 {
+    padding-right: 18px;
+    padding-left: 18px;
   }
 }
