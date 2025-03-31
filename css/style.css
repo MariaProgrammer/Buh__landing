@@ -3065,7 +3065,7 @@ textarea:focus::placeholder {
     padding-top: 15px;
   }
   .header {
-    position: fixed;
+    position: absolute;
     top: 85px;
     width: 100%;
     z-index: 50;
