@@ -3006,7 +3006,7 @@ textarea:focus::placeholder {
     height: 20rem;
   }
   .burger__menu--mob {
-    top: 180px;
+    top: 150px;
   }
   .header {
     top: 85px;
