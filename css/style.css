@@ -2565,7 +2565,7 @@ textarea:focus::placeholder {
     height: fit-content;
     left: 0;
     top: 0;
-    z-index: 50;
+    z-index: 60;
     border-radius: 32px;
     background: #f1f1ff;
     transform: translateY(-1000px);
@@ -3115,7 +3115,7 @@ textarea:focus::placeholder {
   .main {
     padding-top: 80vh;
     position: relative;
-    z-index: 80;
+    z-index: 55;
   }
   .nav--mob-container {
     padding-top: 15px;
