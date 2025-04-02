@@ -2565,7 +2565,7 @@ textarea:focus::placeholder {
     height: fit-content;
     left: 0;
     top: 0;
-    z-index: 20;
+    z-index: 50;
     border-radius: 32px;
     background: #f1f1ff;
     transform: translateY(-1000px);
