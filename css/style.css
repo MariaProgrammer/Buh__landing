@@ -3005,6 +3005,9 @@ textarea:focus::placeholder {
   .nav--mob {
     height: 20rem;
   }
+  .burger__menu--mob {
+    top: 80px;
+  }
   .header {
     top: 85px;
     position: fixed;
@@ -3017,6 +3020,9 @@ textarea:focus::placeholder {
     padding-top: 95vh;
     position: relative;
     z-index: 80;
+  }
+  .header__nav .nav--mob {
+    position: relative;
   }
   .nav--mob-container {
     padding-top: 15px;
