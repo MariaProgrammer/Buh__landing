@@ -3086,14 +3086,11 @@ textarea:focus::placeholder {
   }
   .header {
     top: 85px;
-    height: 85vh;
-    width: 100vw;
-    background: #f1f1ff;
-  }
-  .header__cont {
     position: fixed;
     z-index: 50;
-    top: 100px;
+    height: 90vh;
+    width: 100vw;
+    background: #f1f1ff;
   }
   .nav--mob-container {
     padding-top: 15px;
@@ -3116,7 +3113,7 @@ textarea:focus::placeholder {
     padding: 0px 30px 51px;
   }
   .main {
-    padding-top: 0;
+    padding-top: 90vh;
     position: relative;
     z-index: 80;
   }
