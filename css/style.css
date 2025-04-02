@@ -3093,7 +3093,7 @@ textarea:focus::placeholder {
   .header__cont {
     position: fixed;
     z-index: 50;
-    top: 140px;
+    top: 100px;
   }
   .nav--mob-container {
     padding-top: 15px;
