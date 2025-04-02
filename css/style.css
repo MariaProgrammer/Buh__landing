@@ -1081,7 +1081,7 @@ input:focus:-ms-input-placeholder {
 }
 
 .about__features-img2 {
-  width: 100%;
+  width: 40%;
   height: auto;
 }
 
@@ -1279,7 +1279,8 @@ input:focus:-ms-input-placeholder {
 
 .contacts__box {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 213px;
 }
 
 .contacts__box-right-mob {
@@ -2325,6 +2326,9 @@ textarea:focus::placeholder {
   .about__features-wrap2 {
     padding-top: 42rem;
   }
+  .about__features-img2 {
+    width: 40%;
+  }
   .footer__inner {
     min-height: 300px;
   }
@@ -2348,6 +2352,9 @@ textarea:focus::placeholder {
   }
   .about__features-wrap2 {
     padding-top: 20rem;
+  }
+  .about__features-img2 {
+    width: 40%;
   }
   .swiper3 {
     padding-right: 140px;
@@ -2374,6 +2381,9 @@ textarea:focus::placeholder {
     background-size: 60% auto, cover;
     background-repeat: no-repeat;
   }
+  .contacts__box {
+    gap: 10rem;
+  }
 }
 
 @media (max-width: 991px) {
@@ -2398,6 +2408,9 @@ textarea:focus::placeholder {
   .about__features-wrap2 {
     padding-top: 5rem;
   }
+  .about__features-img2 {
+    width: 60%;
+  }
   .feature-card__descr {
     font-size: 2.8rem;
   }
@@ -2406,6 +2419,9 @@ textarea:focus::placeholder {
     background-position: 25% 28%, 71% 28%, 0 100%, 100% 100%;
     background-size: 18.3rem .4rem,18.3rem .4rem, 10.3rem auto, 38.1rem auto;
     background-repeat: no-repeat;
+  }
+  .contacts__box {
+    gap: 6rem;
   }
   .footer__logo {
     width: 8rem;
@@ -2704,7 +2720,10 @@ textarea:focus::placeholder {
     position: relative;
   }
   .about__features-bottom {
-    padding-bottom: 25.5rem;
+    padding-bottom: 6rem;
+  }
+  .about__features-circle {
+    display: none;
   }
   .swiper1 {
     height: 65rem !important;
@@ -3018,11 +3037,12 @@ textarea:focus::placeholder {
     font-size: 15px;
     max-width: 55%;
   }
-  .about__features-circle {
-    display: none;
-  }
   .about__features-bottom {
-    padding-bottom: 56px;
+    padding-bottom: 15px;
+  }
+  .about__features-img2 {
+    width: 100%;
+    padding-bottom: 15px;
   }
   .feature-card__img {
     width: 55px;

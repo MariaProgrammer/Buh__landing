@@ -11,9 +11,11 @@
     background-size: 60% auto, cover
     background-repeat: no-repeat
     padding-top: 3.8rem
-  .about__features-wrap2 
+  .about__features-wrap2
     padding-top: 42rem
-  .footer__inner    
+  .about__features-img2
+    width: 40%
+  .footer__inner
     min-height: 300px
 @media ( max-width: 1600px )
   .header
@@ -26,15 +28,17 @@
     background-repeat: no-repeat
     padding-top: 3.8rem
   .container
-    
+
     max-width: 1248px
     width: 100%
     margin: 0 auto
     padding: 0 15px
-  .about__features-wrap2 
+  .about__features-wrap2
     padding-top: 20rem
+  .about__features-img2
+    width: 40%
   .swiper3
-    padding-right: 140px 
+    padding-right: 140px
     padding-left: 140px
     // & .swiper-slide__link 
     //   & img
@@ -47,10 +51,9 @@
         // padding-top: 55px
         // padding-bottom: 55px
         // padding-right: 140px
-        
-  .footer__inner    
-    min-height: 223px
 
+  .footer__inner
+    min-height: 223px
 
 @media ( max-width: 1300px )
   .container
@@ -63,7 +66,9 @@
     background-position: 125% 60%, 0 0
     background-size: 60% auto, cover
     background-repeat: no-repeat
-  
+  .contacts__box
+    
+    gap: 10rem
 
 @media ( max-width: 991px )
   .nav
@@ -84,25 +89,29 @@
   .about
     &__features-wrap2
       padding-top: 5rem
+    &__features-img2
+      width: 60%
   .feature-card__descr
     font-size: 2.8rem
   .services
-    &__features    
+    &__features
       background: url('../img/services__linie.svg'),url('../img/services__linie.svg'), url("../img/services__pic1.svg"), url('../img/services__pic2.svg')
       background-position: 25% 28%, 71% 28%, 0 100%, 100% 100%
       background-size: 18.3rem .4rem,18.3rem .4rem, 10.3rem auto, 38.1rem auto
       background-repeat: no-repeat
+  .contacts__box
+    gap: 6rem
   .footer__logo
     width: 8rem
   .swiper3
-    padding-right: 100px 
+    padding-right: 100px
     padding-left: 100px
     // & .swiper-slide__link
-      
+
     //   width: fit-content
     //   height: 100%
     //   text-align: center
-     
+
       // & img
       //   display: block
       //   width: auto
@@ -112,9 +121,8 @@
       //   text-align: center
       //   padding-top: 55px
       //   padding-bottom: 55px
-        
-        
-    & .swiper-button-prev3, .swiper-button-next3  
+
+    & .swiper-button-prev3, .swiper-button-next3
       position: relative
       & img
         width: 21px
@@ -122,14 +130,14 @@
         position: absolute
         left: 50%
         top: 50%
-        transform: translate(-50%, -50%) 
+        transform: translate(-50%, -50%)
 @media ( max-width: 780px )
   html
     font-size: 45%
   body
     background: $color-blue-light
   .header
-    padding-top: 210px  
+    padding-top: 210px
   .nav__logo
     width: 35%
   .nav--mob
@@ -140,20 +148,20 @@
     width: 100%
     height: 29rem
     z-index: 100
-    
+
     display: flex
     align-items: flex-start
     justify-content: center
     background: url('../img/header__bg-mob.png') center / cover no-repeat
-    
+
     &-container
       @include flex-center
       justify-content: space-between
       padding-top: 30px
-      
+
   .nav--desctop
     display: none
-  
+
   .header
     width: 100%
     height: 100%
@@ -320,8 +328,7 @@
           top: -20%
           left: 0
           right: 0
-         
-        
+
     &__wrap
       width: 100%
       height: 100%
@@ -355,7 +362,7 @@
       background: #fff
   & .swiper-button-prev1.swiper-button-disabled, .swiper-button-next1.swiper-button-disabled
     opacity: .5 !important
-  
+
   .about__features
     background: $color-blue-light
     padding-top: 0
@@ -363,16 +370,18 @@
   .about__features-top
     // padding: 250px 0
     // background: url('../img/about__features-bg.svg') center / cover no-repeat
-        
-    padding: 50px 0 459px;
-    background: url(../img/about__features-bg.svg) center bottom / cover no-repeat;
+
+    padding: 50px 0 459px
+    background: url(../img/about__features-bg.svg) center bottom / cover no-repeat
 
   .about__features-wrap
     max-width: 70%
     position: relative
     // top: -227px
-  .about__features-bottom 
-    padding-bottom: 25.5rem
+  .about__features-bottom
+    padding-bottom: 6rem
+  .about__features-circle
+    display: none
   .swiper1
     height: 65rem !important
 
@@ -469,13 +478,11 @@
     & .swiper__container
       top: 95% !important
       z-index: 10
-      
 
     & .swiper__buttons
       justify-content: center
       position: relative
       z-index: 15
-     
 
     & .swiper-button-prev3
       width: 6.4rem
@@ -484,7 +491,7 @@
       border: none
       background: none
       margin-right: 10px
-      z-index: 20     
+      z-index: 20
 
     & .swiper-button-next3
       width: 6.4rem
@@ -493,7 +500,7 @@
       border: none
       background: none
       z-index: 20
-      
+
   .contacts
     position: relative
     overflow: hidden
@@ -583,7 +590,7 @@
       margin-bottom: 95px
 
   .footer
-    
+
     &__partners
       display: flex
       align-items: center
@@ -626,14 +633,14 @@
   .header
     &__nav
       margin-bottom: 30px
-    
+
     &__left-title
       font-size: 4.4rem
   .nav--mob
     height: 20rem
   .burger
     &__menu-list
-  
+
   .main
     &__title-h2
       font-size: 32px
@@ -656,20 +663,18 @@
     & .swiper-slide
       &__container--inner1
         top: -29%
-  .about__features-wrap    
+  .about__features-wrap
     max-width: 80%
   .about__features-top
-    
-    padding: 50px 0 459px;
-    background: url(../img/about__features-bg.svg) 100% bottom / cover no-repeat;
-    
-  
+
+    padding: 50px 0 459px
+    background: url(../img/about__features-bg.svg) 100% bottom / cover no-repeat
+
   .about__features-text2
     font-size: 15px
     max-width: 55%
-  .about__features-circle
-    display: none
   
+
   // .about__features-circle p
   //   font-size: 2.5rem
 
@@ -683,7 +688,10 @@
   //   width: 24rem
   //   height: 24rem
   .about__features-bottom
-    padding-bottom: 56px
+    padding-bottom: 15px
+  .about__features-img2
+    width: 100%
+    padding-bottom: 15px
   .feature-card__img
     width: 55px
   .services__features
@@ -693,7 +701,7 @@
     background-repeat: no-repeat
   .feature-card__descr
     font-size: 15px
-    
+
   .swiper2
     display: none
   .swiper2-mob
@@ -708,7 +716,7 @@
     padding: 120px 30px 51px
   .header__left-linie
     display: none
-   
+
 @media ( max-width: 360px )
   .container
     max-width: 320px
@@ -729,7 +737,6 @@
   //   width: 100%
   //   height: 129px
 
-      
   //   display: block
   //   background: url('../img/header__bg360.svg'), $color-blue-light
   //   background-position: center
@@ -740,14 +747,14 @@
     margin-bottom: 10px
   .header__left-linie
     display: none
-  .nav--mob 
-        height: 16rem
+  .nav--mob
+    height: 16rem
   .burger__menu-list
     padding: 0px 30px 51px
   .main
     padding-top: 90vh
     position: relative
-    z-index: 80  
+    z-index: 80
   .review
     &__title
       font-size: 28px
@@ -789,27 +796,27 @@
     left: 50%
   .about__title
     .services__title-h2
-      margin-right: 32px 
+      margin-right: 32px
     .main__linie
       height: 62px
-      margin-right: 32px 
+      margin-right: 32px
 
   .about__features-wrap
-      max-width: 90%
+    max-width: 90%
   .about__features-text:first-of-type
-      margin-bottom: 12px
+    margin-bottom: 12px
   .about__features-top
     padding: 50px 0 200px
     background: url('../img/about__features-bg.svg')
     background-size: cover
     background-position: 90% bottom
     background-repeat: no-repeat
-  
+
   .main__descr
     font-size: 19px
   .main__linie
     height: 62px
-  
+
   .price__title
     font-size: 28px
     text-align: center
@@ -830,11 +837,10 @@
   .tabs__btn
     width: 150px
   .swiper3
-    padding-right: 18px 
+    padding-right: 18px
     padding-left: 18px
   // .swiper3 .swiper-slide__link img
   //   left: 5%
   .footer
     position: relative
     z-index: 80
-  
