@@ -3084,18 +3084,22 @@ textarea:focus::placeholder {
     max-width: 320px;
     padding: 0 15px;
   }
-  .nav--mob-container {
-    padding-top: 15px;
-  }
   .header {
-    position: fixed;
     top: 85px;
-    width: 100vw;
+    position: fixed;
     z-index: 50;
     height: 90vh;
+    width: 100vw;
     background: #f1f1ff;
   }
-  .header__left-title {
+  .header__cont {
+    padding-top: 40px;
+  }
+  .nav--mob-container {
+    padding-top: 15px;
+    position: fixed;
+  }
+  .nav--mob-container__left-title {
     font-size: 28px;
   }
   .header__pic-mobile {
