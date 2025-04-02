@@ -3088,7 +3088,7 @@ textarea:focus::placeholder {
     top: 85px;
     position: fixed;
     z-index: 50;
-    height: 90vh;
+    height: 85vh;
     width: 100vw;
     background: #f1f1ff;
   }
@@ -3113,7 +3113,7 @@ textarea:focus::placeholder {
     padding: 0px 30px 51px;
   }
   .main {
-    padding-top: 90vh;
+    padding-top: 80vh;
     position: relative;
     z-index: 80;
   }
