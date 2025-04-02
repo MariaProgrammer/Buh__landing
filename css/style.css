@@ -3005,6 +3005,26 @@ textarea:focus::placeholder {
   .nav--mob {
     height: 20rem;
   }
+  .header {
+    top: 85px;
+    position: fixed;
+    z-index: 50;
+    height: 85vh;
+    width: 100vw;
+    background: #f1f1ff;
+  }
+  .main {
+    padding-top: 95vh;
+    position: relative;
+    z-index: 80;
+  }
+  .nav--mob-container {
+    padding-top: 15px;
+    position: fixed;
+  }
+  .header__pic-mobile {
+    padding-top: 4rem;
+  }
   .main__title-h2 {
     font-size: 32px;
   }
@@ -3092,6 +3112,11 @@ textarea:focus::placeholder {
     width: 100vw;
     background: #f1f1ff;
   }
+  .main {
+    padding-top: 80vh;
+    position: relative;
+    z-index: 80;
+  }
   .nav--mob-container {
     padding-top: 15px;
     position: fixed;
@@ -3111,11 +3136,6 @@ textarea:focus::placeholder {
   }
   .burger__menu-list {
     padding: 0px 30px 51px;
-  }
-  .main {
-    padding-top: 80vh;
-    position: relative;
-    z-index: 80;
   }
   .review__title {
     font-size: 28px;
