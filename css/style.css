@@ -2564,7 +2564,7 @@ textarea:focus::placeholder {
     width: 100%;
     height: fit-content;
     left: 0;
-    top: 0;
+    top: 150px;
     z-index: 60;
     border-radius: 32px;
     background: #f1f1ff;
@@ -3006,7 +3006,7 @@ textarea:focus::placeholder {
     height: 20rem;
   }
   .burger__menu--mob {
-    top: 150px;
+    top: 84px;
   }
   .header {
     top: 85px;
@@ -3102,6 +3102,10 @@ textarea:focus::placeholder {
   }
   .header__left-linie {
     display: none;
+  }
+  .footer {
+    position: relative;
+    z-index: 80;
   }
 }
 
@@ -3246,9 +3250,5 @@ textarea:focus::placeholder {
   .swiper3 {
     padding-right: 18px;
     padding-left: 18px;
-  }
-  .footer {
-    position: relative;
-    z-index: 80;
   }
 }
