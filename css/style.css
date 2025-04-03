@@ -897,11 +897,6 @@ body {
   max-width: 27.5rem;
 }
 
-.main .circle-3 {
-  left: 57%;
-  top: 73%;
-}
-
 .slide__title-h4 {
   max-width: 25.3rem;
   font-family: "Nunito Sans 10pt Condensed";
@@ -2323,6 +2318,12 @@ textarea:focus::placeholder {
     background-repeat: no-repeat;
     padding-top: 3.8rem;
   }
+  .main .circle-1 {
+    top: 36%;
+  }
+  .main .circle-3 {
+    left: 50%;
+  }
   .about__features-wrap2 {
     padding-top: 42rem;
   }
@@ -2349,6 +2350,9 @@ textarea:focus::placeholder {
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
+  }
+  .main .circle-1 {
+    top: 26%;
   }
   .about__features-wrap2 {
     padding-top: 20rem;
@@ -2404,6 +2408,10 @@ textarea:focus::placeholder {
   }
   .header__left-btn {
     width: 42.8rem;
+  }
+  .main .circle-1 {
+    left: 12%;
+    top: 16%;
   }
   .about__features-wrap2 {
     padding-top: 5rem;
