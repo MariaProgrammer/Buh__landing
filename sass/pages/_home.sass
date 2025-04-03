@@ -313,21 +313,25 @@
   position: absolute
   right: 30px
   top: -6px
-.contacts__input:invalid:required.touched + .validity-icon::before
+[type="text"]:invalid:required.touched + .validity-icon::before
   content: '✖'
   color: #fa5454
-.contacts__input:invalid:required.touched
-  border: 4px solid #fa5454
+[type="text"]:invalid:required.touched
+  border: 4px solid #fa5454 !important
+.just-validate-error-lable
+  border: 4px solid #fa5454 !important
+.just-validate-error-field
+  border: 4px solid #fa5454 !important
 
-input:valid.touched + .validity-icon::after
+[type="text"]:valid + .validity-icon::after
   // content: '✓'
   content: ''
   width: 28px
   height: 28px
   background: url('../icons/galka.svg')
 
-// [type="checkbox"]:invalid 
-//   border: 2px solid red
+// [type="tel"]:invalid 
+//   border: 2px solid #fa5454
 
 input:focus
   outline: none
