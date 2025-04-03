@@ -3086,11 +3086,19 @@ textarea:focus::placeholder {
   .feature-card__descr {
     font-size: 15px;
   }
+  .swiper-slide__link img {
+    min-width: 135px;
+    height: auto;
+  }
   .swiper2 {
     display: none;
   }
   .swiper2-mob {
     display: block;
+  }
+  .swiper3 {
+    padding-left: 38px;
+    padding-right: 38px;
   }
   .main .card-1 {
     max-width: 187px;
