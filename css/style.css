@@ -2816,9 +2816,13 @@ textarea:focus::placeholder {
   .review__img-bottom-mob {
     display: block;
     width: 100%;
+    height: 100%;
     object-fit: cover;
     position: relative;
-    top: -10px;
+  }
+  .review__box-bottom {
+    width: 100%;
+    height: 100%;
   }
   .swiper3__container {
     background: #414772;
@@ -3158,6 +3162,8 @@ textarea:focus::placeholder {
     color: white;
   }
   .review__box-bottom {
+    width: 100%;
+    height: 100%;
     background: #f1f1ff;
   }
   .review .main__linie {
