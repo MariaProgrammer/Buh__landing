@@ -3018,6 +3018,12 @@ textarea:focus::placeholder {
   .nav--mob-container {
     padding-top: 25px;
   }
+  .header img {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
   .header__nav {
     margin-bottom: 30px;
   }
